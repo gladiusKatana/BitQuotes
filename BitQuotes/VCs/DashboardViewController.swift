@@ -1,0 +1,33 @@
+import UIKit    //    DashboardViewController.swift
+
+
+class DashboardViewController : UIViewController {
+    
+    lazy var priceDisplayView = PriceDisplayView()
+    
+    
+    override func viewDidLoad() {
+        
+        super.viewDidLoad()
+        
+        view.backgroundColor = customWhite
+        
+        viewFrameWidth = view.frame.width;  viewFrameHeight = view.frame.height
+        setupTopBoxView()
+        
+        //setNavBarTitle("What's the price of Bitcoin!")
+        
+        periodicDateRefresh(){kickoffTimer()}    /// refreshes the UI then does the timer kickoff (ie starts on the 0th callback)
+        ///kickoffTimer()                                                               /// does the timer kickoff then refreshes the UI  (ie starts on the 1st callback)
+    }
+    
+    
+    func setupTopBoxView() {
+        
+        priceDisplayView.frame = CGRect(x: 0, y: 0, width: viewFrameWidth, height: viewFrameHeight)
+        
+        view.addSubview(priceDisplayView)
+    }
+    
+}
+

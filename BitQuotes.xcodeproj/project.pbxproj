@@ -13,6 +13,20 @@
 		062F3C71263A64E000B024C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 062F3C6F263A64E000B024C1 /* LaunchScreen.storyboard */; };
 		062F3C7C263A64E100B024C1 /* BitQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C7B263A64E100B024C1 /* BitQuotesTests.swift */; };
 		062F3C87263A64E100B024C1 /* BitQuotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C86263A64E100B024C1 /* BitQuotesUITests.swift */; };
+		062F3CAC263A66E600B024C1 /* NavBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9A263A66E500B024C1 /* NavBarTitle.swift */; };
+		062F3CAD263A66E600B024C1 /* PriceDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9C263A66E500B024C1 /* PriceDisplayView.swift */; };
+		062F3CAE263A66E600B024C1 /* StringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9D263A66E500B024C1 /* StringFormatting.swift */; };
+		062F3CAF263A66E600B024C1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9E263A66E500B024C1 /* Colors.swift */; };
+		062F3CB0263A66E600B024C1 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9F263A66E500B024C1 /* Text.swift */; };
+		062F3CB1263A66E600B024C1 /* NavBar(commented).swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA0263A66E500B024C1 /* NavBar(commented).swift */; };
+		062F3CB2263A66E600B024C1 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA2263A66E500B024C1 /* DashboardViewController.swift */; };
+		062F3CB3263A66E600B024C1 /* Refresh.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA4263A66E500B024C1 /* Refresh.swift */; };
+		062F3CB4263A66E600B024C1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA5263A66E500B024C1 /* APIService.swift */; };
+		062F3CB5263A66E600B024C1 /* APIStructs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA6263A66E500B024C1 /* APIStructs.swift */; };
+		062F3CB6263A66E600B024C1 /* LockOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA7263A66E500B024C1 /* LockOrientation.swift */; };
+		062F3CB7263A66E600B024C1 /* Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA8263A66E600B024C1 /* Constraints.swift */; };
+		062F3CB8263A66E600B024C1 /* Launching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CAA263A66E600B024C1 /* Launching.swift */; };
+		062F3CB9263A66E600B024C1 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CAB263A66E600B024C1 /* Globals.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +59,20 @@
 		062F3C82263A64E100B024C1 /* BitQuotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitQuotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		062F3C86263A64E100B024C1 /* BitQuotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitQuotesUITests.swift; sourceTree = "<group>"; };
 		062F3C88263A64E100B024C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		062F3C9A263A66E500B024C1 /* NavBarTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarTitle.swift; sourceTree = "<group>"; };
+		062F3C9C263A66E500B024C1 /* PriceDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDisplayView.swift; sourceTree = "<group>"; };
+		062F3C9D263A66E500B024C1 /* StringFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFormatting.swift; sourceTree = "<group>"; };
+		062F3C9E263A66E500B024C1 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		062F3C9F263A66E500B024C1 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		062F3CA0263A66E500B024C1 /* NavBar(commented).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavBar(commented).swift"; sourceTree = "<group>"; };
+		062F3CA2263A66E500B024C1 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		062F3CA4263A66E500B024C1 /* Refresh.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Refresh.swift; sourceTree = "<group>"; };
+		062F3CA5263A66E500B024C1 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		062F3CA6263A66E500B024C1 /* APIStructs.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIStructs.swift; sourceTree = "<group>"; };
+		062F3CA7263A66E500B024C1 /* LockOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LockOrientation.swift; sourceTree = "<group>"; };
+		062F3CA8263A66E600B024C1 /* Constraints.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constraints.swift; sourceTree = "<group>"; };
+		062F3CAA263A66E600B024C1 /* Launching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Launching.swift; sourceTree = "<group>"; };
+		062F3CAB263A66E600B024C1 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +123,14 @@
 		062F3C60263A64DD00B024C1 /* BitQuotes */ = {
 			isa = PBXGroup;
 			children = (
-				062F3C61263A64DD00B024C1 /* AppDelegate.swift */,
+				062F3CA9263A66E600B024C1 /* Core */,
+				062F3CA3263A66E500B024C1 /* API */,
+				062F3CA1263A66E500B024C1 /* VCs */,
+				062F3C9B263A66E500B024C1 /* UI */,
+				062F3CA0263A66E500B024C1 /* NavBar(commented).swift */,
+				062F3C9A263A66E500B024C1 /* NavBarTitle.swift */,
+				062F3CA8263A66E600B024C1 /* Constraints.swift */,
+				062F3CA7263A66E500B024C1 /* LockOrientation.swift */,
 				062F3C6D263A64E000B024C1 /* Assets.xcassets */,
 				062F3C6F263A64E000B024C1 /* LaunchScreen.storyboard */,
 				062F3C72263A64E000B024C1 /* Info.plist */,
@@ -120,6 +155,45 @@
 				062F3C88263A64E100B024C1 /* Info.plist */,
 			);
 			path = BitQuotesUITests;
+			sourceTree = "<group>";
+		};
+		062F3C9B263A66E500B024C1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				062F3C9C263A66E500B024C1 /* PriceDisplayView.swift */,
+				062F3C9D263A66E500B024C1 /* StringFormatting.swift */,
+				062F3C9E263A66E500B024C1 /* Colors.swift */,
+				062F3C9F263A66E500B024C1 /* Text.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		062F3CA1263A66E500B024C1 /* VCs */ = {
+			isa = PBXGroup;
+			children = (
+				062F3CA2263A66E500B024C1 /* DashboardViewController.swift */,
+			);
+			path = VCs;
+			sourceTree = "<group>";
+		};
+		062F3CA3263A66E500B024C1 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				062F3CA4263A66E500B024C1 /* Refresh.swift */,
+				062F3CA5263A66E500B024C1 /* APIService.swift */,
+				062F3CA6263A66E500B024C1 /* APIStructs.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		062F3CA9263A66E600B024C1 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				062F3C61263A64DD00B024C1 /* AppDelegate.swift */,
+				062F3CAA263A66E600B024C1 /* Launching.swift */,
+				062F3CAB263A66E600B024C1 /* Globals.swift */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -251,6 +325,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				062F3CAC263A66E600B024C1 /* NavBarTitle.swift in Sources */,
+				062F3CB2263A66E600B024C1 /* DashboardViewController.swift in Sources */,
+				062F3CB1263A66E600B024C1 /* NavBar(commented).swift in Sources */,
+				062F3CAF263A66E600B024C1 /* Colors.swift in Sources */,
+				062F3CB6263A66E600B024C1 /* LockOrientation.swift in Sources */,
+				062F3CB4263A66E600B024C1 /* APIService.swift in Sources */,
+				062F3CB5263A66E600B024C1 /* APIStructs.swift in Sources */,
+				062F3CAD263A66E600B024C1 /* PriceDisplayView.swift in Sources */,
+				062F3CB7263A66E600B024C1 /* Constraints.swift in Sources */,
+				062F3CB0263A66E600B024C1 /* Text.swift in Sources */,
+				062F3CB8263A66E600B024C1 /* Launching.swift in Sources */,
+				062F3CAE263A66E600B024C1 /* StringFormatting.swift in Sources */,
+				062F3CB9263A66E600B024C1 /* Globals.swift in Sources */,
+				062F3CB3263A66E600B024C1 /* Refresh.swift in Sources */,
 				062F3C62263A64DD00B024C1 /* AppDelegate.swift in Sources */,
 				062F3C6C263A64DD00B024C1 /* BitQuotes.xcdatamodeld in Sources */,
 			);
