@@ -19,11 +19,11 @@ func  customizeFont(string: String, font: UIFont) -> NSMutableAttributedString {
 
 extension UILabel {
     
-//    func configure(withText text: String, font: UIFont, color: UIColor) {
-//        self.text = text
-//        self.font = font
-//        self.textColor = color
-//    }
+    func configure(withText text: String, font: UIFont, color: UIColor) {
+        self.text = text
+        self.font = font
+        self.textColor = color
+    }
     
     func setMixedFontBalanceAmount(color: UIColor, amountString: String) {
         self.textColor = color
