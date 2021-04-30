@@ -4,10 +4,10 @@ import UIKit    //    Text.swift
 //let fontName = "Gill Sans" // "Hiragino Sans" //
 let largeFont = UIFont.systemFont(ofSize: 40, weight: .semibold)            // UIFont(name: fontName, size: 40)
 let mediumFont = UIFont.systemFont(ofSize: 28, weight: .semibold)           // UIFont(name: fontName, size: 40)
-let standardFont = UIFont.systemFont(ofSize: 16, weight: .semibold)         // UIFont(name: fontName, size: 13)
+let standardFont = UIFont.systemFont(ofSize: 14, weight: .regular)         // UIFont(name: fontName, size: 13)
 //let slightlyLargerFont = UIFont.systemFont(ofSize: 24, weight: .semibold) // UIFont(name: fontName, size: 13)
 //let font21 = UIFont.systemFont(ofSize: 21, weight: .semibold)
-//let smallFont = UIFont.systemFont(ofSize: 13, weight: .semibold)
+let smallFont = UIFont.systemFont(ofSize: 12, weight: .semibold)
 //let extraSmallFont = UIFont.systemFont(ofSize: 11, weight: .medium)
 
 
