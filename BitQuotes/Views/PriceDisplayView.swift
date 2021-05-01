@@ -24,7 +24,7 @@ class PriceDisplayView : UIView {
                                  views: fiatBalanceLabel, quoteLabel)
         
         
-        quoteLabel.configure(withText: "Fix the money, fix the world. —Marty Bent", font: standardFont, color: .orange)
+        quoteLabel.configure(withText: "Fix the money, fix the world. —Marty Bent", font: font14, color: .orange)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {  [weak self] in
             

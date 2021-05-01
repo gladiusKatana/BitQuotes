@@ -2,12 +2,12 @@ import UIKit    //    Text.swift
 
 
 //let fontName = "Gill Sans" // "Hiragino Sans" //
-let largeFont = UIFont.systemFont(ofSize: 40, weight: .semibold)            // UIFont(name: fontName, size: 40)
-let mediumFont = UIFont.systemFont(ofSize: 28, weight: .semibold)           // UIFont(name: fontName, size: 40)
-let standardFont = UIFont.systemFont(ofSize: 14, weight: .regular)         // UIFont(name: fontName, size: 13)
+let font40 = UIFont.systemFont(ofSize: 40, weight: .semibold)            // UIFont(name: fontName, size: 40)
+let font28 = UIFont.systemFont(ofSize: 28, weight: .semibold)           // UIFont(name: fontName, size: 28)
+let font18 = UIFont.systemFont(ofSize: 18, weight: .semibold)            // UIFont(name: fontName, size: 13)
+let font14 = UIFont.systemFont(ofSize: 14, weight: .regular)          // UIFont(name: fontName, size: 13)
 //let slightlyLargerFont = UIFont.systemFont(ofSize: 24, weight: .semibold) // UIFont(name: fontName, size: 13)
 //let font21 = UIFont.systemFont(ofSize: 21, weight: .semibold)
-let smallFont = UIFont.systemFont(ofSize: 18, weight: .semibold)
 //let extraSmallFont = UIFont.systemFont(ofSize: 11, weight: .medium)
 
 
@@ -28,19 +28,19 @@ extension UILabel {
     func setMixedFontBalanceAmount(color: UIColor, amountString: String) {
         self.textColor = color
         
-        var attrText = customizeFont(string: amountString, font: largeFont)
+        var attrText = customizeFont(string: amountString, font: font40)
 
         if amountString != defaultInitialString {
             if amountString.contains(".") {
                 let parts = amountString.components(separatedBy: ".")
-                attrText = customizeFont(string: "\(parts[0]).", font: largeFont)   /// amount was hardcoded to 5,375 before adding live price update
-                attrText.append(customizeFont(string: "\(parts[1])", font: mediumFont))
+                attrText = customizeFont(string: "\(parts[0]).", font: font40)   /// amount was hardcoded to 5,375 before adding live price update
+                attrText.append(customizeFont(string: "\(parts[1])", font: font28))
             } else {
-                attrText = customizeFont(string: "\(amountString)", font: largeFont)   /// amount was hardcoded to 5,375 before adding live price update
-                attrText.append(customizeFont(string: ".00", font: mediumFont))
+                attrText = customizeFont(string: "\(amountString)", font: font40)   /// amount was hardcoded to 5,375 before adding live price update
+                attrText.append(customizeFont(string: ".00", font: font28))
             }
             
-            attrText.append(customizeFont(string: " USD/BTC", font: smallFont))
+            attrText.append(customizeFont(string: " USD/BTC", font: font18))
         }
         self.attributedText = attrText
     }
