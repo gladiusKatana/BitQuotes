@@ -162,8 +162,8 @@
 			children = (
 				062F3C9C263A66E500B024C1 /* PriceDisplayView.swift */,
 				062F3C9D263A66E500B024C1 /* StringFormatting.swift */,
-				062F3C9F263A66E500B024C1 /* Text.swift */,
 				062F3C9E263A66E500B024C1 /* Colors.swift */,
+				062F3C9F263A66E500B024C1 /* Text.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
