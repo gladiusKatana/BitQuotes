@@ -32,7 +32,7 @@ extension UIViewController {
         label.textAlignment = alignment
         
         label.font = standardFont
-        label.textColor = .darkGray
+        label.textColor = .orange
         
         navigationItem.titleView = label
     }

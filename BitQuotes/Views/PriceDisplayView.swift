@@ -1,4 +1,4 @@
-import UIKit    //    TopBoxView.swift
+import UIKit    //    PriceDisplayView.swift
 
 
 class PriceDisplayView : UIView {
@@ -17,14 +17,14 @@ class PriceDisplayView : UIView {
             [fiatBalanceLabel, quoteLabel],
             attribute: .centerX, plusConstant: 0)
         
-        let intHalfHeight = Int((viewFrameHeight) / 2 - navBarHeight)       //; print("Int 1/2 viewFrameHeight = \(intHalfHeight)")
+        let intHalfHeight = Int((viewFrameHeight) / 2 - navBarHeight)                   //; print("Int 1/2 viewFrameHeight = \(intHalfHeight)")
         let almostBottom = Int(CGFloat(intHalfHeight) - fiatBalanceLabel.frame.height)
         
         addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-\(almostBottom)-[v1]",
                                  views: fiatBalanceLabel, quoteLabel)
         
         
-        quoteLabel.configure(withText: "Fix the money, fix the world. —Marty Bent", font: standardFont, color: .darkGray)
+        quoteLabel.configure(withText: "Fix the money, fix the world. —Marty Bent", font: standardFont, color: .orange)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.5) {  [weak self] in
             
