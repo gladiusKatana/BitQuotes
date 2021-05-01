@@ -2,13 +2,11 @@ import UIKit    //    Text.swift
 
 
 //let fontName = "Gill Sans" // "Hiragino Sans" //
-let font40 = UIFont.systemFont(ofSize: 40, weight: .semibold)            // UIFont(name: fontName, size: 40)
-let font28 = UIFont.systemFont(ofSize: 28, weight: .semibold)           // UIFont(name: fontName, size: 28)
-let font18 = UIFont.systemFont(ofSize: 18, weight: .semibold)            // UIFont(name: fontName, size: 13)
-let font14 = UIFont.systemFont(ofSize: 14, weight: .regular)          // UIFont(name: fontName, size: 13)
-//let slightlyLargerFont = UIFont.systemFont(ofSize: 24, weight: .semibold) // UIFont(name: fontName, size: 13)
-//let font21 = UIFont.systemFont(ofSize: 21, weight: .semibold)
-//let extraSmallFont = UIFont.systemFont(ofSize: 11, weight: .medium)
+
+let font40 = UIFont.systemFont(ofSize: 40, weight: .semibold)               // UIFont(name: fontName, size: 40)
+let font28 = UIFont.systemFont(ofSize: 28, weight: .semibold)               // UIFont(name: fontName, size: 28)
+let font21 = UIFont.systemFont(ofSize: 21, weight: .semibold)               // UIFont(name: fontName, size: 21)
+let font14 = UIFont.systemFont(ofSize: 14, weight: .regular)                // UIFont(name: fontName, size: 14)
 
 
 func  customizeFont(string: String, font: UIFont) -> NSMutableAttributedString {
@@ -40,7 +38,7 @@ extension UILabel {
                 attrText.append(customizeFont(string: ".00", font: font28))
             }
             
-            attrText.append(customizeFont(string: " USD/BTC", font: font18))
+            attrText.append(customizeFont(string: " USD/BTC", font: font21))
         }
         self.attributedText = attrText
     }
