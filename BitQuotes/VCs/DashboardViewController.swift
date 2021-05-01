@@ -15,7 +15,7 @@ class DashboardViewController : UIViewController {
         viewFrameWidth = view.frame.width;  viewFrameHeight = view.frame.height
         setupTopBoxView()
         
-        setNavBarTitle("Coin Quotes: the prices that matter, plus a quote™")
+        setNavBarTitle("Coin Quotes: all the prices that matter, plus a quote™")
         
         periodicDateRefresh(){kickoffTimer()}    /// refreshes the UI then does the timer kickoff (ie starts on the 0th callback)
         ///kickoffTimer()                                                               /// does the timer kickoff then refreshes the UI  (ie starts on the 1st callback)
