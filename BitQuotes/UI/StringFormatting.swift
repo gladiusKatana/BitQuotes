@@ -1,5 +1,6 @@
 import UIKit    //    StringFormatting.swift
 
+
 extension String {
     
     func removeCharacters(beforeOrAfter character: String, after: Bool) -> String {
@@ -39,5 +40,6 @@ extension String {
         formattedDoubleString = formattedDoubleString?.formatDollarsAndCentsDecimals(testPrynt: false)
         return formattedDoubleString!
     }
+    
 }
 
