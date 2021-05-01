@@ -16,7 +16,7 @@ extension AppDelegate {
             statusBarUIView!.backgroundColor = .white
         }
         
-        UINavigationBar.appearance().barTintColor = .white
+        UINavigationBar.appearance().barTintColor = customWhite
         UINavigationBar.appearance().shadowImage = UIImage()
         
         AppUtility.lockOrientation(.portrait)
