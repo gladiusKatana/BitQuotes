@@ -7,7 +7,7 @@ class ApiService: NSObject {
     func getLatestPrice() {    //print("getting latest Bitcoin price from Kraken Ticker API endpoint")
         
         
-        guard let url = URL(string:"https://api.kraken.com/0/public/Ticker?pair=XXBTZUSD,XXBTZCAD") else { print("wrong url"); return }
+        guard let url = URL(string:"https://api.kraken.com/0/public/Ticker?pair=XXBTZUSD") else { print("wrong url"); return }
         
         
         URLSession.shared.dataTask(with: url) { (data, response, err) in
@@ -15,7 +15,7 @@ class ApiService: NSObject {
             guard err == nil else { print("url data request failed, error:\n\(err!)"); return }
             
             guard let data = data else { return }
-            
+             
             
             do {
                 
@@ -23,7 +23,7 @@ class ApiService: NSObject {
                 
                 //let result = response.result            //; print("result: \(result)")
                 
-                let c = response.result.XXBTZCAD.c[0]       ; print("The Price of Bitcoin is: \(c)")        /// normally use  result.XXBTZUSD.c
+                let c = response.result.XXBTZUSD.c[0]       ; print("The Price of Bitcoin is: \(c)")        /// normally use  result.XXBTZUSD.c
                 
                 currentBitcoinPriceString = c.representAsDoubleWithCommas()
                 

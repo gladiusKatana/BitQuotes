@@ -14,11 +14,10 @@ struct KrakenTickerResponse: Codable {
 
 struct TickerTradingPair: Codable {
     
-    let XXBTZUSD: KrakenTicker
-    let XXBTZCAD: KrakenTicker                // (add constant for each new fiat pair)
+    let XXBTZUSD: KrakenTicker              // (add constant for each new fiat pair)
     
     enum CodingKeys: String, CodingKey {
-        case XXBTZUSD, XXBTZCAD
+        case XXBTZUSD
     }
 }
 
