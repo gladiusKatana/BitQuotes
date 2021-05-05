@@ -3,7 +3,7 @@ import UIKit    //    Constraints.swift
 
 extension UIView {
     
-    func addTitleLabelsWithConstraint(_ titleLabels: [UILabel], attribute: NSLayoutConstraint.Attribute, plusConstant const: CGFloat) {
+    func addConstraintToTitleLabels(_ titleLabels: [UILabel], attribute: NSLayoutConstraint.Attribute, plusConstant const: CGFloat) {
         
         for titleLabel in titleLabels {
             self.addSubview(titleLabel)

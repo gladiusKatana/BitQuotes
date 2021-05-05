@@ -21,6 +21,9 @@ extension UILabel {
         self.text = text
         self.font = font
         self.textColor = color
+        self.lineBreakMode = .byWordWrapping // notice the 'b' instead of 'B'
+        self.numberOfLines = 0
+        self.textAlignment = .center
     }
     
     func setMixedFontBalanceAmount(color: UIColor, amountString: String) {
