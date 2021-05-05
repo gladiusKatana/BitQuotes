@@ -15,15 +15,15 @@ class ApiService: NSObject {
             guard err == nil else { print("url data request failed, error:\n\(err!)"); return }
             
             guard let data = data else { return }
-             
+            
             
             do {
                 
                 let response = try JSONDecoder().decode(KrakenTickerResponse.self, from: data)
                 
-                //let result = response.result            //; print("result: \(result)")
+                //let result = response.result                //; print("result: \(result)")
                 
-                let c = response.result.XXBTZUSD.c[0]       ; print("The Price of Bitcoin is: \(c)")        /// normally use  result.XXBTZUSD.c
+                let c = response.result.XXBTZUSD.c[0]         //; print("The Price of Bitcoin is: \(c)")    /// normally use  result.XXBTZUSD.c
                 
                 currentBitcoinPriceString = c.representAsDoubleWithCommas()
                 
