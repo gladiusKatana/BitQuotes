@@ -16,9 +16,9 @@ class PriceDisplayView : UIView {
         fiatBalanceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
         
         //        testString = "Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world.  —Marty Bent "
-                testString = "Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world.  —Marty Bent"
+//                testString = "Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world.  —Marty Bent"
 //                testString = "It appears doubt is the sword that supplies the cuts to Bitcoin's Trojan Hydra neck.  —Preston Pysh"
-//        testString = "Fix the money, fix the world.  —Marty Bent"
+        testString = "Fix the money, fix the world.  —Marty Bent"
         
         testLabel.configure(withText: testString, font: font14, color: .clear)
         quoteLabel.configure(withText: testString, font: font14, color: .orange)
@@ -50,7 +50,7 @@ class PriceDisplayView : UIView {
             //print("test label height: \(self?.testLabel.frame.height)")
             
             let quoteHeight = (self?.testLabel.frame.height)!                      ; print("quoteLabel height: \(quoteHeight)")
-            let quoteY = viewFrameHeight - quoteHeight - navBarHeight
+            let quoteY = viewFrameHeight - quoteHeight - navBarHeight + 14 / 2  // nav bar text is font 14...
             
             self?.quoteLabel.frame = CGRect(x: 0, y: quoteY, width: viewFrameWidth, height: quoteHeight)
         }
