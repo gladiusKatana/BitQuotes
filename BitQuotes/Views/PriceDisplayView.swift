@@ -2,7 +2,7 @@ import UIKit    //    PriceDisplayView.swift
 
 class PriceDisplayView : UIView {
     
-    var fiatBalanceLabel = UILabel()
+    var priceLabel = UILabel()
     var quoteLabel = UILabel()
     var testLabel = UILabel()
     var testString = ""
@@ -13,7 +13,7 @@ class PriceDisplayView : UIView {
         
         ApiService().getLatestPrice()
         
-        fiatBalanceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
+        priceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
         
         //        testString = "Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world.  —Marty Bent "
 //                testString = "Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world. Fix the money, fix the world.  —Marty Bent"
@@ -23,12 +23,12 @@ class PriceDisplayView : UIView {
         testLabel.configure(withText: testString, font: font14, color: .clear)
         quoteLabel.configure(withText: testString, font: font14, color: .orange)
         
-        self.addSubview(fiatBalanceLabel)
+        self.addSubview(priceLabel)
         self.addSubview(testLabel)
         self.addSubview(quoteLabel)
         
         addConstraintToTitleLabels(
-            [fiatBalanceLabel, testLabel],
+            [priceLabel, testLabel],
             attribute: .centerX, plusConstant: 0)
         
         addConstraint(NSLayoutConstraint(item: testLabel, attribute: .width, relatedBy: .equal,
@@ -36,14 +36,14 @@ class PriceDisplayView : UIView {
         
         let intHalfHeight = Int((viewFrameHeight) / 2)              //; print("Int 1/2 viewFrameHeight = \(intHalfHeight)")
         addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]",
-                                 views: fiatBalanceLabel, testLabel)
+                                 views: priceLabel, testLabel)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {  [weak self] in
             
-            self?.fiatBalanceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
+            self?.priceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
             
-            let width = (self?.fiatBalanceLabel.frame.width)!                       ; print("fiatBalanceLabel width: \(width)")
-            let height = (self?.fiatBalanceLabel.frame.height)!                     ; print("fiatBalanceLabel height: \(height)")
+            let width = (self?.priceLabel.frame.width)!                       ; print("fiatBalanceLabel width: \(width)")
+            let height = (self?.priceLabel.frame.height)!                     ; print("fiatBalanceLabel height: \(height)")
             let x = (viewFrameWidth - width) / 2                                    ; print("fiatBalanceLabel x: \(x)")
             let y = viewFrameHeight / 2                                             ; print("fiatBalanceLabel y: \(y)")
             

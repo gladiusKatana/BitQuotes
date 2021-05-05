@@ -11,7 +11,7 @@ extension DashboardViewController {
             let apiServ = ApiService()
             apiServ.getLatestPrice()
             
-            self?.priceDisplayView.fiatBalanceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
+            self?.priceDisplayView.priceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
         }
         
         if refreshCount < 3 {
