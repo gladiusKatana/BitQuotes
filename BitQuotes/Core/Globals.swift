@@ -22,13 +22,3 @@ var currentBitcoinPriceString = defaultInitialString
 
 var defaultInitialString = "HODL"//"..."
 
-var quotesWithAttributions = [["Fix the money, fix the world.", "Marty Bent"],
-                              ["Stay humble, stack Sats.","Matt Odell"],
-                              ["Trusted third parties are security holes.","Nick Szabo"],
-                              ["We are all Satoshi.","Anonymous"],
-                              ["Don't trust, verify.","Anonymous"],
-                              ["It appears doubt is the sword that supplies the cuts to Bitcoin's Trojan Hydra neck.", "Preston Pysh"]
-]
-
-// ["",""],
-

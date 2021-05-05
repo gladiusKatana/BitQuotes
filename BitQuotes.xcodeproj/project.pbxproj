@@ -28,6 +28,7 @@
 		062F3CB8263A66E600B024C1 /* Launching.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CAA263A66E600B024C1 /* Launching.swift */; };
 		062F3CB9263A66E600B024C1 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CAB263A66E600B024C1 /* Globals.swift */; };
 		063D5E9B2642667F00E3AB9A /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D5E9A2642667F00E3AB9A /* RandomNumber.swift */; };
+		063D5EA326433ED800E3AB9A /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D5EA226433ED800E3AB9A /* Quotes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		062F3CAA263A66E600B024C1 /* Launching.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Launching.swift; sourceTree = "<group>"; };
 		062F3CAB263A66E600B024C1 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		063D5E9A2642667F00E3AB9A /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
+		063D5EA226433ED800E3AB9A /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,6 +189,7 @@
 		062F3CA9263A66E600B024C1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				063D5EA226433ED800E3AB9A /* Quotes.swift */,
 				062F3CAB263A66E600B024C1 /* Globals.swift */,
 				062F3C61263A64DD00B024C1 /* AppDelegate.swift */,
 				062F3CAA263A66E600B024C1 /* Launching.swift */,
@@ -344,6 +347,7 @@
 				062F3CB4263A66E600B024C1 /* APIService.swift in Sources */,
 				062F3CB5263A66E600B024C1 /* APIStructs.swift in Sources */,
 				062F3CAD263A66E600B024C1 /* PriceDisplayView.swift in Sources */,
+				063D5EA326433ED800E3AB9A /* Quotes.swift in Sources */,
 				063D5E9B2642667F00E3AB9A /* RandomNumber.swift in Sources */,
 				062F3CB7263A66E600B024C1 /* Constraints.swift in Sources */,
 				062F3CB0263A66E600B024C1 /* Text.swift in Sources */,
