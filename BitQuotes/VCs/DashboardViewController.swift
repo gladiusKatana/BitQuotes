@@ -17,6 +17,10 @@ class DashboardViewController : UIViewController {
         
         setNavBarTitle("Coin Quotes: all the prices that matter, plus a quote™")
         
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) { [weak self] in
+            navBarTitleHeight = (self?.navigationItem.titleView?.frame.height)! //; print("nav bar title label minY is \(navBarTitleHeight)")
+        }
+        
         periodicDateRefresh(){kickoffTimer()}    /// refreshes the UI then does the timer kickoff (ie starts on the 0th callback)
         ///kickoffTimer()                                                               /// does the timer kickoff then refreshes the UI  (ie starts on the 1st callback)
     }

@@ -21,7 +21,7 @@ class PriceDisplayView : UIView {
         tempPriceLabel.configure(withText: "HODL", font: font38, color: .orange)
         addTempPriceLabel()
         
-        self.addSubview(priceLabel);        self.addSubview(quoteLabel)
+        self.addSubview(priceLabel);        self.addSubview(quoteLabel)     ///; quoteLabel.backgroundColor = .red
         self.addSubview(testPriceLabel);    self.addSubview(testQuoteLabel)
         
         addConstraintToTitleLabels([testPriceLabel, testQuoteLabel], attribute: .centerX, plusConstant: 0)
@@ -31,8 +31,7 @@ class PriceDisplayView : UIView {
         let intHalfHeight = Int(viewFrameHeight / 2)                                    //; print("Int 1/2 viewFrameHeight = \(intHalfHeight)")
         addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]", views: testPriceLabel, testQuoteLabel)
         
-        DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) {
-            [weak self] in
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             self?.priceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
             
             let priceWidth = (self?.testPriceLabel.frame.width)!                        //; print("price label width: \(priceWidth)")
@@ -41,11 +40,12 @@ class PriceDisplayView : UIView {
             let priceY = (self?.testPriceLabel.frame.minY)! - priceHeight / 2
             self?.priceLabel.frame = CGRect(x: priceX, y: priceY, width: priceWidth, height: priceHeight)
             
-            let quoteHeight = (self?.testQuoteLabel.frame.height)!                       //; print("quoteLabel height: \(quoteHeight)")
-            let quoteY = viewFrameHeight - quoteHeight - navBarHeight + 14 / 2      // * nav bar text is font 14...
+            let quoteHeight = (self?.testQuoteLabel.frame.height)!                      //; print("quoteLabel height: \(quoteHeight)")
+            let quoteY = viewFrameHeight - quoteHeight - navBarHeight - statusBarHeight + navBarTitleHeight * 2 - 3
+            //print("navBarTitleHeight = \(navBarTitleHeight)")
             self?.quoteLabel.frame = CGRect(x: 0, y: quoteY, width: viewFrameWidth, height: quoteHeight)
             
-            //self?.addTestLines()
+            self?.addTestLines()
         }
     }
     

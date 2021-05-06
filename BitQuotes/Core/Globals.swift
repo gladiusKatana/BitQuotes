@@ -3,13 +3,15 @@ import UIKit    //    Globals.swift
 
 var dashboardVC = DashboardViewController()
 
-//var statusBarHeight : CGFloat = CGFloat()
+var statusBarHeight : CGFloat = CGFloat()
 
 var navBarHeight : CGFloat = CGFloat()
 
 var viewFrameWidth = CGFloat(0)
 
 var viewFrameHeight = CGFloat(0)
+
+var navBarTitleHeight = CGFloat(0)
 
 
 var refreshInterval = TimeInterval(1)

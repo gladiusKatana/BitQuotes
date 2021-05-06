@@ -22,10 +22,9 @@ extension UIViewController {
     
     func setupViewTitle(_ titleText: String, numLines: Int, alignment: NSTextAlignment) {
         
-        let label = UILabel(frame: CGRect(x: view.frame.width / 2,
-                                          y: 0, width: 0, height: 20))
+        let label = UILabel()
         
-        label.backgroundColor = .clear
+        label.backgroundColor = .clear // .red //
         label.isUserInteractionEnabled = false
         
         label.text = titleText; label.numberOfLines = numLines
