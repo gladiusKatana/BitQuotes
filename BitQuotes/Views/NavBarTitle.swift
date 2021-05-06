@@ -16,13 +16,13 @@ extension UIViewController {
             title = "(default title)"
         }
         
-        setupViewTitle(title, numLines: 1, alignment: .left)
+        setupViewTitle(title, numLines: 1, alignment: .center)
     }
     
     
     func setupViewTitle(_ titleText: String, numLines: Int, alignment: NSTextAlignment) {
         
-        let label = UILabel()
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: viewFrameWidth, height: 14))
         
         label.backgroundColor = .clear // .red //
         label.isUserInteractionEnabled = false

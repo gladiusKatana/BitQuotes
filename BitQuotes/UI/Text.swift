@@ -6,7 +6,7 @@ import UIKit    //    Text.swift
 let font38 = UIFont.systemFont(ofSize: 38, weight: .semibold)               // UIFont(name: fontName, size: 40)
 let font25 = UIFont.systemFont(ofSize: 25, weight: .semibold)               // UIFont(name: fontName, size: 28)
 let font21 = UIFont.systemFont(ofSize: 21, weight: .semibold)               // UIFont(name: fontName, size: 21)
-let font14 = UIFont.systemFont(ofSize: 14, weight: .regular)                // UIFont(name: fontName, size: 14)
+let font14 = UIFont.systemFont(ofSize: 14, weight: .semibold)               // UIFont(name: fontName, size: 14)
 
 
 func  customizeFont(string: String, font: UIFont) -> NSMutableAttributedString {
@@ -21,7 +21,7 @@ extension UILabel {
         self.text = text
         self.font = font
         self.textColor = color
-        self.lineBreakMode = .byWordWrapping // notice the 'b' instead of 'B'
+        self.lineBreakMode = .byWordWrapping
         self.numberOfLines = 0
         self.textAlignment = .center
     }

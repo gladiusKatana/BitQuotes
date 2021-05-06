@@ -21,7 +21,7 @@ class PriceDisplayView : UIView {
         tempPriceLabel.configure(withText: "HODL", font: font38, color: .orange)
         addTempPriceLabel()
         
-        self.addSubview(priceLabel);        self.addSubview(quoteLabel)     ///; quoteLabel.backgroundColor = .red
+        self.addSubview(priceLabel);        self.addSubview(quoteLabel)     //; quoteLabel.backgroundColor = .red
         self.addSubview(testPriceLabel);    self.addSubview(testQuoteLabel)
         
         addConstraintToTitleLabels([testPriceLabel, testQuoteLabel], attribute: .centerX, plusConstant: 0)
@@ -40,12 +40,12 @@ class PriceDisplayView : UIView {
             let priceY = (self?.testPriceLabel.frame.minY)! - priceHeight / 2
             self?.priceLabel.frame = CGRect(x: priceX, y: priceY, width: priceWidth, height: priceHeight)
             
-            let quoteHeight = (self?.testQuoteLabel.frame.height)!                      //; print("quoteLabel height: \(quoteHeight)")
-            let quoteY = viewFrameHeight - quoteHeight - navBarHeight - statusBarHeight + navBarTitleHeight * 2 - 3
+            let quoteHeight = (self?.testQuoteLabel.frame.height)!                      ; print("quoteLabel height: \(quoteHeight)")
+            let quoteY = viewFrameHeight - quoteHeight - navBarHeight - statusBarHeight + navBarTitleHeight + 12
             //print("navBarTitleHeight = \(navBarTitleHeight)")
             self?.quoteLabel.frame = CGRect(x: 0, y: quoteY, width: viewFrameWidth, height: quoteHeight)
             
-            self?.addTestLines()
+//            self?.addTestLines()
         }
     }
     
