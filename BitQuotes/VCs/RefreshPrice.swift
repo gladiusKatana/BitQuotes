@@ -12,6 +12,11 @@ extension DashboardViewController {
             apiServ.getLatestPrice()
             
             self?.priceDisplayView.priceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
+            
+            if currentBitcoinPriceString != defaultInitialString && !removedTempField {
+                dashboardVC.priceDisplayView.tempPriceLabel.removeFromSuperview()
+                removedTempField = true
+            }
         }
         
         if refreshCount < 3 {
