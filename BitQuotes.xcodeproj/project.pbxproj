@@ -29,6 +29,7 @@
 		062F3CB9263A66E600B024C1 /* Globals.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CAB263A66E600B024C1 /* Globals.swift */; };
 		063D5E9B2642667F00E3AB9A /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D5E9A2642667F00E3AB9A /* RandomNumber.swift */; };
 		063D5EA326433ED800E3AB9A /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D5EA226433ED800E3AB9A /* Quotes.swift */; };
+		06599061264387D900F9B662 /* AddViewsWithFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06599060264387D900F9B662 /* AddViewsWithFrames.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		062F3CAB263A66E600B024C1 /* Globals.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Globals.swift; sourceTree = "<group>"; };
 		063D5E9A2642667F00E3AB9A /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
 		063D5EA226433ED800E3AB9A /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
+		06599060264387D900F9B662 /* AddViewsWithFrames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewsWithFrames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -203,6 +205,7 @@
 			isa = PBXGroup;
 			children = (
 				062F3C9C263A66E500B024C1 /* PriceDisplayView.swift */,
+				06599060264387D900F9B662 /* AddViewsWithFrames.swift */,
 				062F3CA8263A66E600B024C1 /* Constraints.swift */,
 				062F3C9A263A66E500B024C1 /* NavBarTitle.swift */,
 				062F3CA0263A66E500B024C1 /* NavBar(commented).swift */,
@@ -356,6 +359,7 @@
 				062F3CB9263A66E600B024C1 /* Globals.swift in Sources */,
 				062F3CB3263A66E600B024C1 /* RefreshPrice.swift in Sources */,
 				062F3C62263A64DD00B024C1 /* AppDelegate.swift in Sources */,
+				06599061264387D900F9B662 /* AddViewsWithFrames.swift in Sources */,
 				062F3C6C263A64DD00B024C1 /* BitQuotes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
