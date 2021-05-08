@@ -12,9 +12,9 @@ extension AppDelegate {
         
         getBarHeights()
         
-//        if statusBarUIView!.responds(to:#selector(setter: UIView.backgroundColor)) {
-//            statusBarUIView!.backgroundColor = standardBackgroundColor
-//        }
+//        //if statusBarUIView!.responds(to:#selector(setter: UIView.backgroundColor)) {
+//            //statusBarUIView!.backgroundColor = standardBackgroundColor
+//        //}
         
         UINavigationBar.appearance().barTintColor = standardImageColor
         UINavigationBar.appearance().shadowImage = UIImage()
