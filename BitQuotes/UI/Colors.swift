@@ -18,3 +18,6 @@ var standardBackgroundColor = customWhite // UIColor.orange //
 
 var standardTextColor = UIColor.orange // .black //
 
+
+var viewBackgroundImage = UIImage(named: "honeycombLightDouble10")?.withRenderingMode(.alwaysTemplate)
+
