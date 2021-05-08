@@ -10,8 +10,6 @@ class DashboardViewController : UIViewController {
         
         super.viewDidLoad()
         
-        view.backgroundColor = UIColor(patternImage: viewBackgroundImage!) // standardBackgroundColor //
-        
         viewFrameWidth = view.frame.width;  viewFrameHeight = view.frame.height
         setupTopBoxView()
         

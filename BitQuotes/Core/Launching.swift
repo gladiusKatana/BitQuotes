@@ -7,16 +7,16 @@ extension AppDelegate {
                      willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.backgroundColor = standardBackgroundColor
+        window?.backgroundColor = standardImageColor
         window?.makeKeyAndVisible()
         
         getBarHeights()
         
-        if statusBarUIView!.responds(to:#selector(setter: UIView.backgroundColor)) {
-            statusBarUIView!.backgroundColor = standardBackgroundColor
-        }
+//        if statusBarUIView!.responds(to:#selector(setter: UIView.backgroundColor)) {
+//            statusBarUIView!.backgroundColor = standardBackgroundColor
+//        }
         
-        UINavigationBar.appearance().barTintColor = standardBackgroundColor
+        UINavigationBar.appearance().barTintColor = standardImageColor
         UINavigationBar.appearance().shadowImage = UIImage()
         
         AppUtility.lockOrientation(.portrait)
