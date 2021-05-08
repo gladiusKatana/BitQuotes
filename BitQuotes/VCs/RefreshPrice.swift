@@ -11,7 +11,7 @@ extension DashboardViewController {
             let apiServ = ApiService()
             apiServ.getLatestPrice()
             
-            self?.priceDisplayView.priceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
+            self?.priceDisplayView.priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
             
             if currentBitcoinPriceString != defaultInitialString && !removedTempField {
                 dashboardVC.priceDisplayView.tempPriceLabel.removeFromSuperview()

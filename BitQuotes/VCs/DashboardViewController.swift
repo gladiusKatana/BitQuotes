@@ -10,12 +10,12 @@ class DashboardViewController : UIViewController {
         
         super.viewDidLoad()
         
-        view.backgroundColor = customWhite
+        view.backgroundColor = standardBackgroundColor
         
         viewFrameWidth = view.frame.width;  viewFrameHeight = view.frame.height
         setupTopBoxView()
         
-        setNavBarTitle("Coin Quotes: all the prices that matter, plus a quote™")
+        setNavBarTitle("BitQuotes: all the prices that matter, plus a quote™")
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) { [weak self] in
             navBarTitleHeight = (self?.navigationItem.titleView?.frame.height)! ; print("nav bar title label height is \(navBarTitleHeight)")

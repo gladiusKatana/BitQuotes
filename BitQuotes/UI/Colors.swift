@@ -14,3 +14,7 @@ extension UIColor {
 
 var customWhite = UIColor.rgb(248, g: 244, b: 252, a: 1)
 
+var standardBackgroundColor = customWhite // UIColor.orange //
+
+var standardTextColor = UIColor.orange // .black //
+

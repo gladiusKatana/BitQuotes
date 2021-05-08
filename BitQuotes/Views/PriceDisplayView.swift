@@ -9,16 +9,16 @@ class PriceDisplayView : UIView {
         super.init(frame: frame)
         ApiService().getLatestPrice()                                                   ///; print("latest price string is '\(currentBitcoinPriceString)'")
         
-        priceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
+        priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
         testPriceLabel.setMixedFontBalanceAmount(color: .clear, amountString: "99,999.99")
         
         quoteIndex = randomNumber(inRange: 1...quotesWithAttributions.count) - 1        //; print("quoteIndex = \(quoteIndex)")
         let testString = "\(quotesWithAttributions[quoteIndex][0])  —\(quotesWithAttributions[quoteIndex][1])"
         
-        quoteLabel.configure(withText: testString, font: font14, color: .orange)
+        quoteLabel.configure(withText: testString, font: font14, color: standardTextColor)
         testQuoteLabel.configure(withText: testString, font: font14, color: .clear)
         
-        tempPriceLabel.configure(withText: "HODL", font: font38, color: .orange)
+        tempPriceLabel.configure(withText: "HODL", font: font38, color: standardTextColor)
         addTempPriceLabel()
         
         self.addSubview(priceLabel);        self.addSubview(quoteLabel)     //; quoteLabel.backgroundColor = .red
@@ -32,7 +32,7 @@ class PriceDisplayView : UIView {
         addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]", views: testPriceLabel, testQuoteLabel)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
-            self?.priceLabel.setMixedFontBalanceAmount(color: .orange, amountString: currentBitcoinPriceString)
+            self?.priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
             
             let priceWidth = (self?.testPriceLabel.frame.width)!                        //; print("price label width: \(priceWidth)")
             let priceHeight = (self?.testPriceLabel.frame.height)!
