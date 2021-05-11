@@ -36,7 +36,7 @@ class PriceDisplayView : UIView {
             
             let priceWidth = (self?.testPriceLabel.frame.width)!                        //; print("price label width: \(priceWidth)")
             let priceHeight = (self?.testPriceLabel.frame.height)!
-            let priceX = (self?.testPriceLabel.frame.midX)! - priceWidth / 2
+            let priceX = (self?.testPriceLabel.frame.minX)! //- priceWidth / 2
             let priceY = (self?.testPriceLabel.frame.minY)! - priceHeight / 2
             self?.priceLabel.frame = CGRect(x: priceX, y: priceY, width: priceWidth, height: priceHeight)
             
