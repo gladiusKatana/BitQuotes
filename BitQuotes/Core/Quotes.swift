@@ -71,3 +71,15 @@ var quotesWithAttributions = [
     
 ]
 
+/*
+ 
+ bottom menu
+ 
+ settings page
+ 
+ about page
+ 
+ bisq premium
+ 
+ */
+

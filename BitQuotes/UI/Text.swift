@@ -1,29 +1,28 @@
 import UIKit    //    Text.swift
 
-
 //let fontName = "Gill Sans" // "Hiragino Sans" //
 
 let font38 = UIFont.systemFont(ofSize: 38, weight: .semibold)               // UIFont(name: fontName, size: 40)
 let font25 = UIFont.systemFont(ofSize: 25, weight: .semibold)               // UIFont(name: fontName, size: 28)
 let font21 = UIFont.systemFont(ofSize: 21, weight: .semibold)               // UIFont(name: fontName, size: 21)
 let font14 = UIFont.systemFont(ofSize: 14, weight: .semibold)               // UIFont(name: fontName, size: 14)
-
+let font14Reg = UIFont.systemFont(ofSize: 14, weight: .regular)             // UIFont(name: fontName, size: 14)
+let font12 = UIFont.systemFont(ofSize: 12, weight: .semibold)               // UIFont(name: fontName, size: 14)
 
 func  customizeFont(string: String, font: UIFont) -> NSMutableAttributedString {
     return NSMutableAttributedString(string: string, attributes:
                                         [NSAttributedString.Key.font : font ])
 }
 
-
 extension UILabel {
     
-    func configure(withText text: String, font: UIFont, color: UIColor) {
+    func configure(withText text: String, font: UIFont, color: UIColor, alignment: NSTextAlignment) {
         self.text = text
         self.font = font
         self.textColor = color
         self.lineBreakMode = .byWordWrapping
         self.numberOfLines = 0
-        self.textAlignment = .center
+        self.textAlignment = alignment
     }
     
     func setMixedFontBalanceAmount(color: UIColor, amountString: String) {

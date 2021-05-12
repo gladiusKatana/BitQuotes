@@ -4,8 +4,8 @@ extension PriceDisplayView {
     
     func addTempPriceLabel() {
         
-        let hodlWidth = CGFloat(200)                                            /// could be any value as long as it's centered horizontally &  backgroundColor  is .clear
-        let hodlHeight = CGFloat(50)                                            /// could be any value as long as it's centered vertically
+        let hodlWidth = CGFloat(200) /// could be any value as long as it's centered horizontally &  backgroundColor  is .clear
+        let hodlHeight = CGFloat(50) /// could be any value as long as it's centered vertically
         let hodlX = (viewFrameWidth - hodlWidth) / 2                            //; print("'hodl' label x: \(hodlX)")
         let hodlY = (viewFrameHeight - hodlHeight) / 2                          //; print("'hodl' label y: \(hodlY)")
         
