@@ -25,15 +25,16 @@ class PriceDisplayView : UIView {
         testQuoteLabel.configure(withText: testString, font: font14, color: .clear, alignment: .center)
         
         let menuString = "⚙ menu"; let sourceString = "source: kraken" ; let bisqString = "bisq +4.7%"
+        let menuFont = font12Reg
         
-        menuLabel.configure(withText: menuString, font: font14Reg, color: .black, alignment: .left)
-        testMenuLabel.configure(withText: menuString, font: font14Reg, color: .clear, alignment: .left)
+        menuLabel.configure(withText: menuString, font: menuFont, color: .black, alignment: .left)
+        testMenuLabel.configure(withText: menuString, font: menuFont, color: .clear, alignment: .left)
         
-        sourceLabel.configure(withText: sourceString, font: font14Reg, color: .black, alignment: .center)
-        testSourceLabel.configure(withText: sourceString, font: font14Reg, color: .clear, alignment: .center)
+        sourceLabel.configure(withText: sourceString, font: menuFont, color: .black, alignment: .center)
+        testSourceLabel.configure(withText: sourceString, font: menuFont, color: .clear, alignment: .center)
         
-        bisqLabel.configure(withText: bisqString, font: font14Reg, color: .black, alignment: .right)
-        testBisqLabel.configure(withText: bisqString, font: font14Reg, color: .clear, alignment: .right)
+        bisqLabel.configure(withText: bisqString, font: menuFont, color: .black, alignment: .right)
+        testBisqLabel.configure(withText: bisqString, font: menuFont, color: .clear, alignment: .right)
         
         
         self.addSubview(priceLabel);        self.addSubview(quoteLabel);        self.addSubview(menuLabel);     self.addSubview(sourceLabel)
@@ -108,4 +109,9 @@ class PriceDisplayView : UIView {
     
     required init?(coder: NSCoder) {fatalError("init(coder:) has not been implemented")}
 }
+
+//        addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]-\(bottomMinus100)-[v2]-100-[v3]", views: testPriceLabel, testQuoteLabel, testMenuLabel, testQuoteLabel)
+        
+//        addConstraint(NSLayoutConstraint(item: testSourceLabel, attribute: .centerY, relatedBy: .equal,
+//                                         toItem: testMenuLabel, attribute: .centerY, multiplier: 1, constant: 0))
 

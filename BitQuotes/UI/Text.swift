@@ -7,7 +7,7 @@ let font25 = UIFont.systemFont(ofSize: 25, weight: .semibold)               // U
 let font21 = UIFont.systemFont(ofSize: 21, weight: .semibold)               // UIFont(name: fontName, size: 21)
 let font14 = UIFont.systemFont(ofSize: 14, weight: .semibold)               // UIFont(name: fontName, size: 14)
 let font14Reg = UIFont.systemFont(ofSize: 14, weight: .regular)             // UIFont(name: fontName, size: 14)
-let font12 = UIFont.systemFont(ofSize: 12, weight: .semibold)               // UIFont(name: fontName, size: 14)
+let font12Reg = UIFont.systemFont(ofSize: 13, weight: .regular)             // UIFont(name: fontName, size: 14)
 
 func  customizeFont(string: String, font: UIFont) -> NSMutableAttributedString {
     return NSMutableAttributedString(string: string, attributes:
