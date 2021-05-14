@@ -22,7 +22,7 @@ extension PriceDisplayView {
 
     func setupTextInFields() {
 
-        tempPriceLabel.configure(withText: "HODL", font: font38, color: standardTextColor, alignment: .left)
+        tempPriceLabel.configure(withText: "HODL", font: font38, color: standardTextColor, alignment: .center)
         addTempPriceLabel()
 
         priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
