@@ -4,7 +4,7 @@ import UIKit    //    NavBarTitle.swift
 extension UIViewController {
     
     
-    func setNavBarTitle(_ customString: String?) {    //print("setting nav bar title")
+    func setNavBarTitle(_ customString: String?, color: UIColor) {    //print("setting nav bar title")
         
         var title = ""
         
@@ -16,11 +16,11 @@ extension UIViewController {
             title = "(default title)"
         }
         
-        setupViewTitle(title, numLines: 1, alignment: .center)
+        setupViewTitle(title, numLines: 1, alignment: .center, color: color)
     }
     
     
-    func setupViewTitle(_ titleText: String, numLines: Int, alignment: NSTextAlignment) {
+    func setupViewTitle(_ titleText: String, numLines: Int, alignment: NSTextAlignment, color: UIColor) {
         
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: viewFrameWidth, height: 14))
         
@@ -31,7 +31,7 @@ extension UIViewController {
         label.textAlignment = alignment
         
         label.font = font14
-        label.textColor = standardTextColor
+        label.textColor = color
         
         navigationItem.titleView = label
     }

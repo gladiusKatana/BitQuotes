@@ -30,6 +30,8 @@
 		063D5E9B2642667F00E3AB9A /* RandomNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D5E9A2642667F00E3AB9A /* RandomNumber.swift */; };
 		063D5EA326433ED800E3AB9A /* Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 063D5EA226433ED800E3AB9A /* Quotes.swift */; };
 		06599061264387D900F9B662 /* AddViewsWithFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06599060264387D900F9B662 /* AddViewsWithFrames.swift */; };
+		066EA8512650CD3A0060677F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EA8502650CD3A0060677F /* MenuViewController.swift */; };
+		066EA8652650D70A0060677F /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EA8642650D70A0060677F /* Navigation.swift */; };
 		067C6D19264E26E00055495E /* PriceDisplaySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C6D18264E26E00055495E /* PriceDisplaySetup.swift */; };
 		067C6D21264E27820055495E /* MenuNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C6D20264E27820055495E /* MenuNavigation.swift */; };
 /* End PBXBuildFile section */
@@ -81,6 +83,8 @@
 		063D5E9A2642667F00E3AB9A /* RandomNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomNumber.swift; sourceTree = "<group>"; };
 		063D5EA226433ED800E3AB9A /* Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quotes.swift; sourceTree = "<group>"; };
 		06599060264387D900F9B662 /* AddViewsWithFrames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewsWithFrames.swift; sourceTree = "<group>"; };
+		066EA8502650CD3A0060677F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		066EA8642650D70A0060677F /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
 		067C6D18264E26E00055495E /* PriceDisplaySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDisplaySetup.swift; sourceTree = "<group>"; };
 		067C6D20264E27820055495E /* MenuNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -178,7 +182,9 @@
 			isa = PBXGroup;
 			children = (
 				062F3CA2263A66E500B024C1 /* DashboardViewController.swift */,
+				066EA8502650CD3A0060677F /* MenuViewController.swift */,
 				062F3CA4263A66E500B024C1 /* RefreshPrice.swift */,
+				066EA8642650D70A0060677F /* Navigation.swift */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -363,7 +369,9 @@
 				062F3CB0263A66E600B024C1 /* Text.swift in Sources */,
 				062F3CB8263A66E600B024C1 /* Launching.swift in Sources */,
 				062F3CAE263A66E600B024C1 /* StringFormatting.swift in Sources */,
+				066EA8512650CD3A0060677F /* MenuViewController.swift in Sources */,
 				062F3CB9263A66E600B024C1 /* Globals.swift in Sources */,
+				066EA8652650D70A0060677F /* Navigation.swift in Sources */,
 				067C6D21264E27820055495E /* MenuNavigation.swift in Sources */,
 				062F3CB3263A66E600B024C1 /* RefreshPrice.swift in Sources */,
 				062F3C62263A64DD00B024C1 /* AppDelegate.swift in Sources */,

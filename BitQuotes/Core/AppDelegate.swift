@@ -5,7 +5,6 @@ import UIKit    //    AppDelegate.swift
     
     var window: UIWindow?
     lazy var orientationLock = UIInterfaceOrientationMask.all               /// set orientations you want allowed by default
-    var navController : UINavigationController? = UINavigationController()
     
     var statusBarUIView: UIView? {
         if #available(iOS 13.0, *) {

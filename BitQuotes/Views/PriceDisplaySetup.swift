@@ -2,22 +2,12 @@ import UIKit    //    PriceDisplaySetup.swift
 
 extension PriceDisplayView {
 
-    func addSubviewsAndGestureRecognizers() {
+    func addSubviews() {
 
         self.addSubview(priceLabel);        self.addSubview(quoteLabel);        self.addSubview(menuLabel);     self.addSubview(sourceLabel)
         self.addSubview(bisqLabel)
         self.addSubview(testPriceLabel);    self.addSubview(testQuoteLabel);    self.addSubview(testMenuLabel); self.addSubview(testSourceLabel)
-        self.addSubview(testBisqLabel)
-//        bisqLabel.backgroundColor = .red
-
-        let tapMenu = UITapGestureRecognizer(target: self, action: #selector(tappedMenu))
-        menuLabel.addGestureRecognizer(tapMenu); menuLabel.isUserInteractionEnabled = true
-
-        let tapSource = UITapGestureRecognizer(target: self, action: #selector(tappedSource))
-        sourceLabel.isUserInteractionEnabled = true; sourceLabel.addGestureRecognizer(tapSource)
-
-        let tapBisq = UITapGestureRecognizer(target: self, action: #selector(tappedBisq))
-        bisqLabel.isUserInteractionEnabled = true; bisqLabel.addGestureRecognizer(tapBisq)
+        self.addSubview(testBisqLabel)      //; bisqLabel.backgroundColor = .red
     }
 
     func setupTextInFields() {
@@ -34,7 +24,7 @@ extension PriceDisplayView {
         quoteLabel.configure(withText: testString, font: font14, color: standardTextColor, alignment: .center)
         testQuoteLabel.configure(withText: testString, font: font14, color: .clear, alignment: .center)
 
-        let menuString = "⚙ menu"; let sourceString = "source: kraken" ; let bisqString = "bisq +4.7%"
+        let menuString = "⚙ menu"; let sourceString = "💲kraken" ; let bisqString = "bisq +4.7%"
         let menuFont = font12Reg
 
         menuLabel.configure(withText: menuString, font: menuFont, color: .black, alignment: .left)
@@ -46,6 +36,5 @@ extension PriceDisplayView {
         bisqLabel.configure(withText: bisqString, font: menuFont, color: .black, alignment: .right)
         testBisqLabel.configure(withText: bisqString, font: menuFont, color: .clear, alignment: .right)
     }
-
 }
 

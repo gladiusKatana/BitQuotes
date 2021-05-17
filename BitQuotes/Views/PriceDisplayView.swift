@@ -9,22 +9,18 @@ class PriceDisplayView : UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         ApiService().getLatestPrice()
-        
         setupTextInFields()
-
-        addSubviewsAndGestureRecognizers()
+        addSubviews()
         
         addConstraintToTitleLabels([testPriceLabel, testQuoteLabel], attribute: .centerX, plusConstant: 0)
         addConstraintToTitleLabels([testMenuLabel], attribute: .left, plusConstant: 0)
         
         addConstraint(NSLayoutConstraint(item: testQuoteLabel,
                                          attribute: .width, relatedBy: .equal, toItem: self, attribute: .width, multiplier: 1, constant: 0))
-        
         let intHalfHeight = Int(viewFrameHeight / 2)
         let bottomMinus100 = Int(viewFrameHeight) - 200 - intHalfHeight
         addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]-\(bottomMinus100)-[v2]", views: testPriceLabel, testQuoteLabel, testMenuLabel)
 
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             self?.priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
             
@@ -59,9 +55,4 @@ class PriceDisplayView : UIView {
     
     required init?(coder: NSCoder) {fatalError("init(coder:) has not been implemented")}
 }
-
-//        addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]-\(bottomMinus100)-[v2]-100-[v3]", views: testPriceLabel, testQuoteLabel, testMenuLabel, testQuoteLabel)
-        
-//        addConstraint(NSLayoutConstraint(item: testSourceLabel, attribute: .centerY, relatedBy: .equal,
-//                                         toItem: testMenuLabel, attribute: .centerY, multiplier: 1, constant: 0))
 

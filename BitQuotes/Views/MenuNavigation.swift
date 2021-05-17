@@ -1,9 +1,11 @@
 import UIKit    //    MenuNavigation.swift
 
-extension PriceDisplayView {
+
+extension UIViewController {
     
     @objc func tappedMenu() {
         print("tapped menu")
+        dashboardVC.gotoView(vc: menuVC)
     }
     
     @objc func tappedSource() {
