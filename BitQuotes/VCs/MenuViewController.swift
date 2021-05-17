@@ -4,7 +4,7 @@ import UIKit    //    MenuViewController.swift
 class MenuViewController : UIViewController {
     
     lazy var descriptionView = MenuView()
-    
+    var justPinched = false
     
     override func viewDidLoad() {
         
@@ -16,6 +16,21 @@ class MenuViewController : UIViewController {
         view.addSubview(descriptionView)
         
         setNavBarTitle("Menu", color: .black)
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        let pinchToQuit = UIPinchGestureRecognizer(target: self, action: #selector(pinched))
+        self.view.addGestureRecognizer(pinchToQuit)
+        justPinched = false
+    }
+    
+    @objc func pinched() {
+        
+        if !justPinched { justPinched = true
+            gotoView(vc: dashboardVC)
+        }
     }
     
 }
