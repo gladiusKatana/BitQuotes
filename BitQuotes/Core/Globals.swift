@@ -28,7 +28,11 @@ var refreshCount = 0
 var quoteIndex = 0
 
 
-var defaultInitialString = "" // "HODL" // "..." // "       " //
+var assetPairStrings = ["BTCUSD", "SATUSD", "USDSAT", "ETHBTC", "BNBBTC", "ADABTC", "DOGEBTC"]
+
+var assetDescriptionStrings = ["Bitcoin in US Dollars", "Satoshis in US Dollars", "US Dollars per Satoshi", "Altcoin 1 vs Bitcoin", "Altcoin 2 vs Bitcoin", "Altcoin 3 vs Bitcoin", "Altcoin 4 vs Bitcoin"]
+
+var defaultInitialString = ""
 
 var currentBitcoinPriceString = defaultInitialString
 

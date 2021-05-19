@@ -32,6 +32,9 @@
 		06599061264387D900F9B662 /* AddViewsWithFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06599060264387D900F9B662 /* AddViewsWithFrames.swift */; };
 		066EA8512650CD3A0060677F /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EA8502650CD3A0060677F /* MenuViewController.swift */; };
 		066EA8652650D70A0060677F /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EA8642650D70A0060677F /* Navigation.swift */; };
+		066EA8722651EE900060677F /* BaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EA86F2651EE900060677F /* BaseCell.swift */; };
+		066EA8732651EE900060677F /* AssetsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EA8702651EE900060677F /* AssetsCollectionViewController.swift */; };
+		066EA8742651EE900060677F /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EA8712651EE900060677F /* CustomLayout.swift */; };
 		067C6D19264E26E00055495E /* PriceDisplaySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C6D18264E26E00055495E /* PriceDisplaySetup.swift */; };
 		067C6D21264E27820055495E /* MenuNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C6D20264E27820055495E /* MenuNavigation.swift */; };
 /* End PBXBuildFile section */
@@ -85,6 +88,9 @@
 		06599060264387D900F9B662 /* AddViewsWithFrames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewsWithFrames.swift; sourceTree = "<group>"; };
 		066EA8502650CD3A0060677F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		066EA8642650D70A0060677F /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		066EA86F2651EE900060677F /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = SOURCE_ROOT; };
+		066EA8702651EE900060677F /* AssetsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		066EA8712651EE900060677F /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = SOURCE_ROOT; };
 		067C6D18264E26E00055495E /* PriceDisplaySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDisplaySetup.swift; sourceTree = "<group>"; };
 		067C6D20264E27820055495E /* MenuNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNavigation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -137,6 +143,9 @@
 		062F3C60263A64DD00B024C1 /* BitQuotes */ = {
 			isa = PBXGroup;
 			children = (
+				066EA86F2651EE900060677F /* BaseCell.swift */,
+				066EA8712651EE900060677F /* CustomLayout.swift */,
+				066EA8702651EE900060677F /* AssetsCollectionViewController.swift */,
 				062F3CA9263A66E600B024C1 /* Core */,
 				062F3CA3263A66E500B024C1 /* API */,
 				062F3CA1263A66E500B024C1 /* VCs */,
@@ -358,6 +367,7 @@
 				062F3CAC263A66E600B024C1 /* NavBarTitle.swift in Sources */,
 				062F3CB2263A66E600B024C1 /* DashboardViewController.swift in Sources */,
 				062F3CB1263A66E600B024C1 /* NavBar(commented).swift in Sources */,
+				066EA8722651EE900060677F /* BaseCell.swift in Sources */,
 				062F3CAF263A66E600B024C1 /* Colors.swift in Sources */,
 				062F3CB6263A66E600B024C1 /* LockOrientation.swift in Sources */,
 				062F3CB4263A66E600B024C1 /* APIService.swift in Sources */,
@@ -365,6 +375,7 @@
 				062F3CAD263A66E600B024C1 /* PriceDisplayView.swift in Sources */,
 				063D5EA326433ED800E3AB9A /* Quotes.swift in Sources */,
 				063D5E9B2642667F00E3AB9A /* RandomNumber.swift in Sources */,
+				066EA8732651EE900060677F /* AssetsCollectionViewController.swift in Sources */,
 				062F3CB7263A66E600B024C1 /* Constraints.swift in Sources */,
 				062F3CB0263A66E600B024C1 /* Text.swift in Sources */,
 				062F3CB8263A66E600B024C1 /* Launching.swift in Sources */,
@@ -376,6 +387,7 @@
 				062F3CB3263A66E600B024C1 /* RefreshPrice.swift in Sources */,
 				062F3C62263A64DD00B024C1 /* AppDelegate.swift in Sources */,
 				06599061264387D900F9B662 /* AddViewsWithFrames.swift in Sources */,
+				066EA8742651EE900060677F /* CustomLayout.swift in Sources */,
 				062F3C6C263A64DD00B024C1 /* BitQuotes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -474,7 +486,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -529,7 +541,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

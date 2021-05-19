@@ -5,7 +5,6 @@ class DashboardViewController : UIViewController {
     
     lazy var priceDisplayView = PriceDisplayView()
     
-    
     override func viewDidLoad() {
         
         super.viewDidLoad()
@@ -32,10 +31,10 @@ class DashboardViewController : UIViewController {
         
         let tapMenu = UITapGestureRecognizer(target: self, action: #selector(tappedMenu))
         priceDisplayView.menuLabel.addGestureRecognizer(tapMenu); priceDisplayView.menuLabel.isUserInteractionEnabled = true
-
+        
         let tapSource = UITapGestureRecognizer(target: self, action: #selector(tappedSource))
         priceDisplayView.sourceLabel.isUserInteractionEnabled = true; priceDisplayView.sourceLabel.addGestureRecognizer(tapSource)
-
+        
         let tapBisq = UITapGestureRecognizer(target: self, action: #selector(tappedBisq))
         priceDisplayView.bisqLabel.isUserInteractionEnabled = true; priceDisplayView.bisqLabel.addGestureRecognizer(tapBisq)
     }
