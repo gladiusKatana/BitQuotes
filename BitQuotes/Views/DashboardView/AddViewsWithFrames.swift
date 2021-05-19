@@ -1,6 +1,6 @@
 import UIKit    //    AddViewsWithFrames.swift
 
-extension PriceDisplayView {
+extension DashboardTextView {
     
     func addTempPriceLabel() {
         
@@ -23,7 +23,6 @@ extension PriceDisplayView {
                               y: navBarHeight + statusBarHeight,
                               width: wid,
                               height: hei)
-        
         let topYLine = UIView(frame: topYRect);         topYLine.backgroundColor = .black
         self.addSubview(topYLine)
         
@@ -32,7 +31,6 @@ extension PriceDisplayView {
                                  y: (viewFrameHeight - hei) / 2,
                                  width: wid,
                                  height: hei)
-        
         let middleYLine = UIView(frame: middleYRect);   middleYLine.backgroundColor = .black
         self.addSubview(middleYLine)
         
@@ -41,7 +39,6 @@ extension PriceDisplayView {
                                  y: viewFrameHeight - (navBarHeight + statusBarHeight),
                                  width: wid,
                                  height: hei)
-        
         let bottomYLine = UIView(frame: bottomYRect);   bottomYLine.backgroundColor = .black
         self.addSubview(bottomYLine)
     }

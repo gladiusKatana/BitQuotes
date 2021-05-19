@@ -1,7 +1,6 @@
 import UIKit    //    PriceDisplaySetup.swift
 
-
-extension PriceDisplayView {
+extension DashboardTextView {
     
     func addSubviews() {
         

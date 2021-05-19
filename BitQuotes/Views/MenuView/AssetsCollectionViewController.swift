@@ -1,6 +1,5 @@
 import UIKit    //    AssetsCollectionViewController.swift
 
-
 class AssetsCollectionViewController : UICollectionViewController, UICollectionViewDelegateFlowLayout {
     
     init(layout: CustomFlowLayout) {
@@ -42,7 +41,6 @@ class AssetsCollectionViewController : UICollectionViewController, UICollectionV
         
         cell.backgroundColor = .white
         cell.roundUpAmountLabel.setMixedFontAssetDescription(cellNumber: indexPath.section, color: .darkGray)
-        
         return cell
     }
 }

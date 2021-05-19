@@ -1,6 +1,5 @@
 import UIKit    //    Globals.swift
 
-
 var navController : UINavigationController? = UINavigationController()
 
 var backgroundVC = UIViewController()

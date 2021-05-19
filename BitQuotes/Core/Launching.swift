@@ -1,6 +1,5 @@
 import UIKit    //    Launching.swift
 
-
 extension AppDelegate {
     
     func application(_ application: UIApplication,
@@ -12,9 +11,9 @@ extension AppDelegate {
         
         getBarHeights()
         
-//        //if statusBarUIView!.responds(to:#selector(setter: UIView.backgroundColor)) {
-//            //statusBarUIView!.backgroundColor = standardBackgroundColor
-//        //}
+        //if statusBarUIView!.responds(to:#selector(setter: UIView.backgroundColor)) {
+            //statusBarUIView!.backgroundColor = standardBackgroundColor
+        //}
         
         UINavigationBar.appearance().barTintColor = standardImageColor
         UINavigationBar.appearance().shadowImage = UIImage()

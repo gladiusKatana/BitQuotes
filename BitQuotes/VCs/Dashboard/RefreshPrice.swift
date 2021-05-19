@@ -1,6 +1,5 @@
 import UIKit    //    RefreshPrice.swift
 
-
 extension DashboardViewController {
     
     
@@ -11,10 +10,10 @@ extension DashboardViewController {
             let apiServ = ApiService()
             apiServ.getLatestPrice()
             
-            self?.priceDisplayView.priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
+            self?.dashboardTextView.priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
             
             if currentBitcoinPriceString != defaultInitialString && !removedTempField {
-                dashboardVC.priceDisplayView.tempPriceLabel.removeFromSuperview()
+                dashboardVC.dashboardTextView.tempPriceLabel.removeFromSuperview()
                 removedTempField = true
             }
         }
@@ -36,5 +35,6 @@ extension DashboardViewController {
             self?.periodicDateRefresh(){self?.kickoffTimer()}
         }
     }
+    
 }
 

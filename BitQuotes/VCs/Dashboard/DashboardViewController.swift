@@ -1,9 +1,8 @@
 import UIKit    //    DashboardViewController.swift
 
-
 class DashboardViewController : UIViewController {
     
-    lazy var priceDisplayView = PriceDisplayView()
+    lazy var dashboardTextView = DashboardTextView()
     
     override func viewDidLoad() {
         
@@ -25,18 +24,21 @@ class DashboardViewController : UIViewController {
     
     func setupDashboardView() {
         
-        priceDisplayView.frame = CGRect(x: 0, y: 0, width: viewFrameWidth, height: viewFrameHeight)
+        dashboardTextView.frame = CGRect(x: 0, y: 0, width: viewFrameWidth, height: viewFrameHeight)
         
-        view.addSubview(priceDisplayView)
+        view.addSubview(dashboardTextView)
         
         let tapMenu = UITapGestureRecognizer(target: self, action: #selector(tappedMenu))
-        priceDisplayView.menuLabel.addGestureRecognizer(tapMenu); priceDisplayView.menuLabel.isUserInteractionEnabled = true
+        dashboardTextView.menuLabel.isUserInteractionEnabled = true
+        dashboardTextView.menuLabel.addGestureRecognizer(tapMenu)
         
         let tapSource = UITapGestureRecognizer(target: self, action: #selector(tappedSource))
-        priceDisplayView.sourceLabel.isUserInteractionEnabled = true; priceDisplayView.sourceLabel.addGestureRecognizer(tapSource)
+        dashboardTextView.sourceLabel.isUserInteractionEnabled = true
+        dashboardTextView.sourceLabel.addGestureRecognizer(tapSource)
         
         let tapBisq = UITapGestureRecognizer(target: self, action: #selector(tappedBisq))
-        priceDisplayView.bisqLabel.isUserInteractionEnabled = true; priceDisplayView.bisqLabel.addGestureRecognizer(tapBisq)
+        dashboardTextView.bisqLabel.isUserInteractionEnabled = true
+        dashboardTextView.bisqLabel.addGestureRecognizer(tapBisq)
     }
     
 }

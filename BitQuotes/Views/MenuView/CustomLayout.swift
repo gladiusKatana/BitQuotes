@@ -1,6 +1,5 @@
 import UIKit    //    CustomLayout.swift
 
-
 class CustomFlowLayout : UICollectionViewFlowLayout {
     
     var cellWidth = CGFloat(0)

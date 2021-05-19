@@ -1,6 +1,5 @@
 import UIKit    //    AppDelegate.swift
 
-
 @UIApplicationMain class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?

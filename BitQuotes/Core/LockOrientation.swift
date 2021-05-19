@@ -1,6 +1,5 @@
 import UIKit    //    LockOrientation.swift
 
-
 extension AppDelegate {
     
     func application(_ application: UIApplication, supportedInterfaceOrientationsFor window: UIWindow?) -> UIInterfaceOrientationMask {

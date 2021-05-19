@@ -1,6 +1,5 @@
 import UIKit    //    BaseCell.swift
 
-
 class BaseCell: UICollectionViewCell {
     
     static let reuseIdentifier = "CustomCell"

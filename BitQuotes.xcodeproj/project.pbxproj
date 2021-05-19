@@ -14,10 +14,10 @@
 		062F3C7C263A64E100B024C1 /* BitQuotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C7B263A64E100B024C1 /* BitQuotesTests.swift */; };
 		062F3C87263A64E100B024C1 /* BitQuotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C86263A64E100B024C1 /* BitQuotesUITests.swift */; };
 		062F3CAC263A66E600B024C1 /* NavBarTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9A263A66E500B024C1 /* NavBarTitle.swift */; };
-		062F3CAD263A66E600B024C1 /* PriceDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9C263A66E500B024C1 /* PriceDisplayView.swift */; };
+		062F3CAD263A66E600B024C1 /* DashboardTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9C263A66E500B024C1 /* DashboardTextView.swift */; };
 		062F3CAE263A66E600B024C1 /* StringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9D263A66E500B024C1 /* StringFormatting.swift */; };
 		062F3CAF263A66E600B024C1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9E263A66E500B024C1 /* Colors.swift */; };
-		062F3CB0263A66E600B024C1 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9F263A66E500B024C1 /* Text.swift */; };
+		062F3CB0263A66E600B024C1 /* SetText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9F263A66E500B024C1 /* SetText.swift */; };
 		062F3CB1263A66E600B024C1 /* NavBar(commented).swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA0263A66E500B024C1 /* NavBar(commented).swift */; };
 		062F3CB2263A66E600B024C1 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA2263A66E500B024C1 /* DashboardViewController.swift */; };
 		062F3CB3263A66E600B024C1 /* RefreshPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA4263A66E500B024C1 /* RefreshPrice.swift */; };
@@ -36,7 +36,8 @@
 		066EA8732651EE900060677F /* AssetsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EA8702651EE900060677F /* AssetsCollectionViewController.swift */; };
 		066EA8742651EE900060677F /* CustomLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 066EA8712651EE900060677F /* CustomLayout.swift */; };
 		067C6D19264E26E00055495E /* PriceDisplaySetup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C6D18264E26E00055495E /* PriceDisplaySetup.swift */; };
-		067C6D21264E27820055495E /* MenuNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067C6D20264E27820055495E /* MenuNavigation.swift */; };
+		067D4EDD2654977200432308 /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D4EDC2654977200432308 /* Fonts.swift */; };
+		067D4EE2265497FF00432308 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 067D4EE1265497FF00432308 /* MenuView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,10 +71,10 @@
 		062F3C86263A64E100B024C1 /* BitQuotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BitQuotesUITests.swift; sourceTree = "<group>"; };
 		062F3C88263A64E100B024C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		062F3C9A263A66E500B024C1 /* NavBarTitle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavBarTitle.swift; sourceTree = "<group>"; };
-		062F3C9C263A66E500B024C1 /* PriceDisplayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PriceDisplayView.swift; sourceTree = "<group>"; };
+		062F3C9C263A66E500B024C1 /* DashboardTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTextView.swift; sourceTree = "<group>"; };
 		062F3C9D263A66E500B024C1 /* StringFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFormatting.swift; sourceTree = "<group>"; };
 		062F3C9E263A66E500B024C1 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		062F3C9F263A66E500B024C1 /* Text.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
+		062F3C9F263A66E500B024C1 /* SetText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetText.swift; sourceTree = "<group>"; };
 		062F3CA0263A66E500B024C1 /* NavBar(commented).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavBar(commented).swift"; sourceTree = "<group>"; };
 		062F3CA2263A66E500B024C1 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		062F3CA4263A66E500B024C1 /* RefreshPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshPrice.swift; sourceTree = "<group>"; };
@@ -88,11 +89,12 @@
 		06599060264387D900F9B662 /* AddViewsWithFrames.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddViewsWithFrames.swift; sourceTree = "<group>"; };
 		066EA8502650CD3A0060677F /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		066EA8642650D70A0060677F /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
-		066EA86F2651EE900060677F /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseCell.swift; sourceTree = SOURCE_ROOT; };
-		066EA8702651EE900060677F /* AssetsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetsCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
-		066EA8712651EE900060677F /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLayout.swift; sourceTree = SOURCE_ROOT; };
+		066EA86F2651EE900060677F /* BaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = BaseCell.swift; path = BitQuotes/Views/MenuView/BaseCell.swift; sourceTree = SOURCE_ROOT; };
+		066EA8702651EE900060677F /* AssetsCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = AssetsCollectionViewController.swift; path = BitQuotes/Views/MenuView/AssetsCollectionViewController.swift; sourceTree = SOURCE_ROOT; };
+		066EA8712651EE900060677F /* CustomLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CustomLayout.swift; path = BitQuotes/Views/MenuView/CustomLayout.swift; sourceTree = SOURCE_ROOT; };
 		067C6D18264E26E00055495E /* PriceDisplaySetup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PriceDisplaySetup.swift; sourceTree = "<group>"; };
-		067C6D20264E27820055495E /* MenuNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuNavigation.swift; sourceTree = "<group>"; };
+		067D4EDC2654977200432308 /* Fonts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		067D4EE1265497FF00432308 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,14 +145,12 @@
 		062F3C60263A64DD00B024C1 /* BitQuotes */ = {
 			isa = PBXGroup;
 			children = (
-				066EA86F2651EE900060677F /* BaseCell.swift */,
-				066EA8712651EE900060677F /* CustomLayout.swift */,
-				066EA8702651EE900060677F /* AssetsCollectionViewController.swift */,
 				062F3CA9263A66E600B024C1 /* Core */,
 				062F3CA3263A66E500B024C1 /* API */,
 				062F3CA1263A66E500B024C1 /* VCs */,
 				06C3E985263D0DD900708A1C /* Views */,
 				062F3C9B263A66E500B024C1 /* UI */,
+				067D4EF026549A0E00432308 /* inactive */,
 				062F3C6D263A64E000B024C1 /* Assets.xcassets */,
 				062F3C6F263A64E000B024C1 /* LaunchScreen.storyboard */,
 				062F3C72263A64E000B024C1 /* Info.plist */,
@@ -181,8 +181,9 @@
 			isa = PBXGroup;
 			children = (
 				062F3C9D263A66E500B024C1 /* StringFormatting.swift */,
+				062F3C9F263A66E500B024C1 /* SetText.swift */,
+				067D4EDC2654977200432308 /* Fonts.swift */,
 				062F3C9E263A66E500B024C1 /* Colors.swift */,
-				062F3C9F263A66E500B024C1 /* Text.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -190,10 +191,10 @@
 		062F3CA1263A66E500B024C1 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
-				062F3CA2263A66E500B024C1 /* DashboardViewController.swift */,
-				066EA8502650CD3A0060677F /* MenuViewController.swift */,
-				062F3CA4263A66E500B024C1 /* RefreshPrice.swift */,
 				066EA8642650D70A0060677F /* Navigation.swift */,
+				062F3C9A263A66E500B024C1 /* NavBarTitle.swift */,
+				067D4EE9265498C200432308 /* Dashboard */,
+				06BF2CA126549DC4008091EC /* Menu */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -220,16 +221,58 @@
 			path = Core;
 			sourceTree = "<group>";
 		};
+		067D4EE9265498C200432308 /* Dashboard */ = {
+			isa = PBXGroup;
+			children = (
+				062F3CA2263A66E500B024C1 /* DashboardViewController.swift */,
+				062F3CA4263A66E500B024C1 /* RefreshPrice.swift */,
+			);
+			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		067D4EF026549A0E00432308 /* inactive */ = {
+			isa = PBXGroup;
+			children = (
+				062F3CA0263A66E500B024C1 /* NavBar(commented).swift */,
+			);
+			path = inactive;
+			sourceTree = "<group>";
+		};
+		06BF2C9A26549D72008091EC /* DashboardView */ = {
+			isa = PBXGroup;
+			children = (
+				062F3C9C263A66E500B024C1 /* DashboardTextView.swift */,
+				067C6D18264E26E00055495E /* PriceDisplaySetup.swift */,
+				06599060264387D900F9B662 /* AddViewsWithFrames.swift */,
+			);
+			path = DashboardView;
+			sourceTree = "<group>";
+		};
+		06BF2CA126549DC4008091EC /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				066EA8502650CD3A0060677F /* MenuViewController.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		06BF2CA226549E30008091EC /* MenuView */ = {
+			isa = PBXGroup;
+			children = (
+				067D4EE1265497FF00432308 /* MenuView.swift */,
+				066EA8712651EE900060677F /* CustomLayout.swift */,
+				066EA86F2651EE900060677F /* BaseCell.swift */,
+				066EA8702651EE900060677F /* AssetsCollectionViewController.swift */,
+			);
+			path = MenuView;
+			sourceTree = "<group>";
+		};
 		06C3E985263D0DD900708A1C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				062F3C9C263A66E500B024C1 /* PriceDisplayView.swift */,
-				067C6D18264E26E00055495E /* PriceDisplaySetup.swift */,
-				06599060264387D900F9B662 /* AddViewsWithFrames.swift */,
-				067C6D20264E27820055495E /* MenuNavigation.swift */,
 				062F3CA8263A66E600B024C1 /* Constraints.swift */,
-				062F3C9A263A66E500B024C1 /* NavBarTitle.swift */,
-				062F3CA0263A66E500B024C1 /* NavBar(commented).swift */,
+				06BF2C9A26549D72008091EC /* DashboardView */,
+				06BF2CA226549E30008091EC /* MenuView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -372,22 +415,23 @@
 				062F3CB6263A66E600B024C1 /* LockOrientation.swift in Sources */,
 				062F3CB4263A66E600B024C1 /* APIService.swift in Sources */,
 				062F3CB5263A66E600B024C1 /* APIStructs.swift in Sources */,
-				062F3CAD263A66E600B024C1 /* PriceDisplayView.swift in Sources */,
+				062F3CAD263A66E600B024C1 /* DashboardTextView.swift in Sources */,
 				063D5EA326433ED800E3AB9A /* Quotes.swift in Sources */,
 				063D5E9B2642667F00E3AB9A /* RandomNumber.swift in Sources */,
 				066EA8732651EE900060677F /* AssetsCollectionViewController.swift in Sources */,
 				062F3CB7263A66E600B024C1 /* Constraints.swift in Sources */,
-				062F3CB0263A66E600B024C1 /* Text.swift in Sources */,
+				062F3CB0263A66E600B024C1 /* SetText.swift in Sources */,
 				062F3CB8263A66E600B024C1 /* Launching.swift in Sources */,
 				062F3CAE263A66E600B024C1 /* StringFormatting.swift in Sources */,
 				066EA8512650CD3A0060677F /* MenuViewController.swift in Sources */,
 				062F3CB9263A66E600B024C1 /* Globals.swift in Sources */,
 				066EA8652650D70A0060677F /* Navigation.swift in Sources */,
-				067C6D21264E27820055495E /* MenuNavigation.swift in Sources */,
+				067D4EE2265497FF00432308 /* MenuView.swift in Sources */,
 				062F3CB3263A66E600B024C1 /* RefreshPrice.swift in Sources */,
 				062F3C62263A64DD00B024C1 /* AppDelegate.swift in Sources */,
 				06599061264387D900F9B662 /* AddViewsWithFrames.swift in Sources */,
 				066EA8742651EE900060677F /* CustomLayout.swift in Sources */,
+				067D4EDD2654977200432308 /* Fonts.swift in Sources */,
 				062F3C6C263A64DD00B024C1 /* BitQuotes.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

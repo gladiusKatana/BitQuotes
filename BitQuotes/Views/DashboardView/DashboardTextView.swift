@@ -1,6 +1,6 @@
-import UIKit    //    PriceDisplayView.swift
+import UIKit    //    DashboardTextView.swift
 
-class PriceDisplayView : UIView {
+class DashboardTextView : UIView {
     
     var priceLabel = UILabel();         var quoteLabel = UILabel();         var tempPriceLabel = UILabel()
     var menuLabel = UILabel();          var sourceLabel = UILabel();        var bisqLabel = UILabel();      var testBisqLabel = UILabel()
@@ -20,7 +20,7 @@ class PriceDisplayView : UIView {
         let intHalfHeight = Int(viewFrameHeight / 2)
         let bottomMinus100 = Int(viewFrameHeight) - 200 - intHalfHeight
         addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]-\(bottomMinus100)-[v2]", views: testPriceLabel, testQuoteLabel, testMenuLabel)
-
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             self?.priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
             
@@ -39,9 +39,9 @@ class PriceDisplayView : UIView {
             let bottomFieldsY = viewFrameHeight - menuHeight //- 9                      //; print("menuLabel y: \(bottomFieldsY)")
             self?.menuLabel.frame = CGRect(x: 0, y: bottomFieldsY, width: menuWidth, height: menuHeight)
             
-//            let sourceWidth = (self?.testSourceLabel.frame.width)!                    ; print("sourceLabel width: \(sourceWidth)")
-//            let sourceHeight = (self?.testSourceLabel.frame.height)!                  ; print("sourceLabel height: \(sourceHeight)")
-//            self?.sourceLabel.frame = CGRect(x: 0, y: bottomFieldsY, width: sourceWidth, height: sourceHeight)
+            //let sourceWidth = (self?.testSourceLabel.frame.width)!                    ; print("sourceLabel width: \(sourceWidth)")
+            //let sourceHeight = (self?.testSourceLabel.frame.height)!                  ; print("sourceLabel height: \(sourceHeight)")
+            //self?.sourceLabel.frame = CGRect(x: 0, y: bottomFieldsY, width: sourceWidth, height: sourceHeight)
             
             let wd = CGFloat(200)
             self?.sourceLabel.frame = CGRect(x: (viewFrameWidth - wd) / 2, y: bottomFieldsY, width: wd, height: navBarTitleHeight)
@@ -49,7 +49,7 @@ class PriceDisplayView : UIView {
             let wdt = CGFloat(100)
             self?.bisqLabel.frame = CGRect(x: viewFrameWidth - wd / 2, y: bottomFieldsY, width: wdt, height: navBarTitleHeight)
             
-//            self?.addTestLines()
+            //self?.addTestLines()
         }
     }
     
