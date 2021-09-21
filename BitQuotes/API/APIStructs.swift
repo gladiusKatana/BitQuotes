@@ -1,5 +1,6 @@
 import UIKit    //    APIStructs.swift
 
+
 struct KrakenTickerResponse: Codable {
     
     let error: [String]
