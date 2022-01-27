@@ -21,7 +21,7 @@ extension DashboardTextView {
         quoteIndex = randomNumber(inRange: 1...quotesWithAttributions.count) - 1        //; print("quoteIndex = \(quoteIndex)")
         let testString = "\(quotesWithAttributions[quoteIndex][0])  —\(quotesWithAttributions[quoteIndex][1])"
         
-        quoteLabel.configure(withText: testString, font: font14, color: standardTextColor, alignment: .center)
+        quoteLabel.configure(withText: testString, font: font14, color: UIColor.black, alignment: .center)
         testQuoteLabel.configure(withText: testString, font: font14, color: .clear, alignment: .center)
         
         let menuString = "⚙ menu"; let sourceString = "💲kraken" ; let bisqString = "bisq +4.7%"

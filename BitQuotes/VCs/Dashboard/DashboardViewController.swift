@@ -11,7 +11,7 @@ class DashboardViewController : UIViewController {
         viewFrameWidth = view.frame.width;  viewFrameHeight = view.frame.height
         setupDashboardView()
         
-        setNavBarTitle("BitQuotes: all the prices that matter, plus a quote™", color: standardTextColor)
+        setNavBarTitle("BitQuotes: all the prices that matter, plus a quote™", color: UIColor.black)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.05) { [weak self] in
             navBarTitleHeight = (self?.navigationItem.titleView?.frame.height)!     //; print("nav bar title label height is \(navBarTitleHeight)")
