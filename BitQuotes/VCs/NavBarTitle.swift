@@ -32,6 +32,8 @@ extension UIViewController {
         label.font = font14
         label.textColor = color
         
+        label.adjustsFontSizeToFitWidth = true
+        
         navigationItem.titleView = label
     }
     
