@@ -6,6 +6,8 @@ extension AppDelegate {
     func application(_ application: UIApplication,
                      willFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
         
+        ApiService().getLatestPrice()
+        
         let viewBackgroundImage = UIImage(named: "honeycombLightDouble10")?.withRenderingMode(.alwaysTemplate)
         let standardImageColor = UIColor(patternImage: viewBackgroundImage!)
         

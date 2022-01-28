@@ -12,8 +12,6 @@ class DashboardView : UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        ApiService().getLatestPrice()
-        
         labelTextSetup()
         
         addSubviews()
