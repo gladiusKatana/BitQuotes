@@ -31,13 +31,9 @@ extension AppDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        navController = UINavigationController(rootViewController: backgroundVC) /// temporary, unseen initial root view controller
+        navController = UINavigationController(rootViewController: dashboardVC)
         
         window?.rootViewController = navController
-        
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
-            dashboardVC.gotoView(vc: dashboardVC)
-//        }
         
         return true
     }
