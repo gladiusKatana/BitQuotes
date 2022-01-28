@@ -3,7 +3,7 @@ import UIKit    //    RefreshPrice.swift
 
 extension DashboardViewController {
     
-    func periodicDateRefresh(completion: () -> ()) {       //print("·", terminator: "")
+    func periodicRefresh(completion: () -> ()) {       //print("·", terminator: "")
         
         var removedTempField = false
         
@@ -35,7 +35,7 @@ extension DashboardViewController {
     func kickoffTimer() {
         
         DispatchQueue.global(qos: .userInteractive).asyncAfter(deadline: .now() + refreshInterval) { [weak self] in
-            self?.periodicDateRefresh(){self?.kickoffTimer()}
+            self?.periodicRefresh(){self?.kickoffTimer()}
         }
     }
     

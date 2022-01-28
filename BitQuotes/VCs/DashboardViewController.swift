@@ -20,8 +20,7 @@ class DashboardViewController : UIViewController {
             navBarTitleHeight = (self?.navigationItem.titleView?.frame.height)!     //; print("navBarTitleHeight: \(navBarTitleHeight)")
         }
         
-        periodicDateRefresh(){kickoffTimer()}    /// refreshes the UI then does the timer kickoff (ie starts on the 0th callback)
-        ///kickoffTimer()                                                                 //  does the timer kickoff then refreshes the UI  (ie starts on the 1st callback)
+        periodicRefresh(){kickoffTimer()}    /// refreshes the UI then does the timer kickoff (ie starts on the 0th callback)       ///kickoffTimer()   //  calling kickoffTimer() here will do the timer kickoff then refresh the UI  (ie starts on the 1st callback)
     }
     
     
