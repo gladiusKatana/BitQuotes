@@ -18,7 +18,7 @@ class DashboardViewController : UIViewController {
         }
         
         periodicDateRefresh(){kickoffTimer()}    /// refreshes the UI then does the timer kickoff (ie starts on the 0th callback)
-        ///kickoffTimer()                                                               /// does the timer kickoff then refreshes the UI  (ie starts on the 1st callback)
+        ///kickoffTimer()                                                                 //  does the timer kickoff then refreshes the UI  (ie starts on the 1st callback)
     }
     
     
@@ -29,16 +29,8 @@ class DashboardViewController : UIViewController {
         view.addSubview(dashboardTextView)
         
         let tapMenu = UITapGestureRecognizer(target: self, action: #selector(tappedMenu))
-        dashboardTextView.menuLabel.isUserInteractionEnabled = true
-        dashboardTextView.menuLabel.addGestureRecognizer(tapMenu)
-        
-        let tapSource = UITapGestureRecognizer(target: self, action: #selector(tappedSource))
-        dashboardTextView.sourceLabel.isUserInteractionEnabled = true
-        dashboardTextView.sourceLabel.addGestureRecognizer(tapSource)
-        
-        let tapBisq = UITapGestureRecognizer(target: self, action: #selector(tappedBisq))
-        dashboardTextView.bisqLabel.isUserInteractionEnabled = true
-        dashboardTextView.bisqLabel.addGestureRecognizer(tapBisq)
+        dashboardTextView.priceLabel.isUserInteractionEnabled = true
+        dashboardTextView.priceLabel.addGestureRecognizer(tapMenu)
     }
     
 }

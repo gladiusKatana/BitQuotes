@@ -3,7 +3,6 @@ import UIKit    //    DashboardTextView.swift
 class DashboardTextView : UIView {
     
     var priceLabel = UILabel();         var quoteLabel = UILabel();         var tempPriceLabel = UILabel()
-    var menuLabel = UILabel();          var sourceLabel = UILabel();        var bisqLabel = UILabel();      var testBisqLabel = UILabel()
     var testPriceLabel = UILabel();     var testQuoteLabel = UILabel();     var testMenuLabel = UILabel();  var testSourceLabel = UILabel()
     
     override init(frame: CGRect) {
@@ -33,23 +32,6 @@ class DashboardTextView : UIView {
             let quoteHeight = (self?.testQuoteLabel.frame.height)!                      //; print("quoteLabel height: \(quoteHeight)")
             let quoteY = viewFrameHeight - quoteHeight - navBarHeight - statusBarHeight + navBarTitleHeight + 12
             self?.quoteLabel.frame = CGRect(x: 0, y: quoteY, width: viewFrameWidth, height: quoteHeight)
-            
-            let menuWidth = (self?.testMenuLabel.frame.width)!                          //; print("menuLabel width: \(menuWidth)")
-            let menuHeight = (self?.testMenuLabel.frame.height)!                        //; print("menuLabel height: \(menuHeight)")
-            let bottomFieldsY = viewFrameHeight - menuHeight //- 9                      //; print("menuLabel y: \(bottomFieldsY)")
-            self?.menuLabel.frame = CGRect(x: 0, y: bottomFieldsY, width: menuWidth, height: menuHeight)
-            
-            //let sourceWidth = (self?.testSourceLabel.frame.width)!                    ; print("sourceLabel width: \(sourceWidth)")
-            //let sourceHeight = (self?.testSourceLabel.frame.height)!                  ; print("sourceLabel height: \(sourceHeight)")
-            //self?.sourceLabel.frame = CGRect(x: 0, y: bottomFieldsY, width: sourceWidth, height: sourceHeight)
-            
-            let wd = CGFloat(200)
-            self?.sourceLabel.frame = CGRect(x: (viewFrameWidth - wd) / 2, y: bottomFieldsY, width: wd, height: navBarTitleHeight)
-            
-            let wdt = CGFloat(100)
-            self?.bisqLabel.frame = CGRect(x: viewFrameWidth - wd / 2, y: bottomFieldsY, width: wdt, height: navBarTitleHeight)
-            
-            //self?.addTestLines()
         }
     }
     

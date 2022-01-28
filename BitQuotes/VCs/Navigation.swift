@@ -8,15 +8,6 @@ extension UIViewController {
         dashboardVC.gotoView(vc: menuVC)
     }
     
-    @objc func tappedSource() {
-        print("tapped source")
-    }
-    
-    @objc func tappedBisq() {
-        print("tapped bisq")
-    }
-    
-    
     func gotoView(vc: UIViewController) {   //print("\nshowing vc \(vc)")
         
         dismissNavController {

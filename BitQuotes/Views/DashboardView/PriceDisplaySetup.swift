@@ -4,10 +4,12 @@ extension DashboardTextView {
     
     func addSubviews() {
         
-        self.addSubview(priceLabel);        self.addSubview(quoteLabel);        self.addSubview(menuLabel);     self.addSubview(sourceLabel)
-        self.addSubview(bisqLabel)
-        self.addSubview(testPriceLabel);    self.addSubview(testQuoteLabel);    self.addSubview(testMenuLabel); self.addSubview(testSourceLabel)
-        self.addSubview(testBisqLabel)      //; bisqLabel.backgroundColor = .red
+        self.addSubview(priceLabel)
+        self.addSubview(quoteLabel)
+        self.addSubview(testPriceLabel)
+        self.addSubview(testQuoteLabel)
+        self.addSubview(testMenuLabel)
+        self.addSubview(testSourceLabel)
     }
     
     func setupTextInFields() {
@@ -23,18 +25,6 @@ extension DashboardTextView {
         
         quoteLabel.configure(withText: testString, font: font14, color: UIColor.black, alignment: .center)
         testQuoteLabel.configure(withText: testString, font: font14, color: .clear, alignment: .center)
-        
-        let menuString = "⚙ menu"; let sourceString = "💲kraken" ; let bisqString = "bisq +4.7%"
-        let menuFont = font13Reg
-        
-        menuLabel.configure(withText: menuString, font: menuFont, color: .black, alignment: .left)
-        testMenuLabel.configure(withText: menuString, font: menuFont, color: .clear, alignment: .left)
-        
-        sourceLabel.configure(withText: sourceString, font: menuFont, color: .black, alignment: .center)
-        testSourceLabel.configure(withText: sourceString, font: menuFont, color: .clear, alignment: .center)
-        
-        bisqLabel.configure(withText: bisqString, font: menuFont, color: .black, alignment: .right)
-        testBisqLabel.configure(withText: bisqString, font: menuFont, color: .clear, alignment: .right)
     }
 }
 
