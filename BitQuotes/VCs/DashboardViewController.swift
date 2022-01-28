@@ -5,7 +5,7 @@ class DashboardViewController : UIViewController {
     
     lazy var dashboardView = DashboardView()
     
-    var refreshInterval = TimeInterval(1)   // *
+    var refreshInterval = TimeInterval(1)
     var refreshCount = 0
     
     override func viewDidLoad() {

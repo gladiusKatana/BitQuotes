@@ -14,9 +14,9 @@ class ApiService: NSObject {
         
         URLSession.shared.dataTask(with: url) { (data, response, err) in
             
-            guard err == nil else { print("url data request failed, error:\n\(err!)"); return }
+            guard err == nil else { print("url session data task error:\n\(err!)"); return }
             
-            guard let data = data else { return }
+            guard let data = data else { print("url data request failed"); return }
             
             
             do {
