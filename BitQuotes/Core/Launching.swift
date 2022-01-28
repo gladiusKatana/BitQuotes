@@ -33,7 +33,7 @@ extension AppDelegate {
     func application(_ application: UIApplication,
                      didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         
-        navController = UINavigationController(rootViewController: dashboardVC)
+        navController = UINavigationController(rootViewController: DashboardViewController())
         
         window?.rootViewController = navController
         

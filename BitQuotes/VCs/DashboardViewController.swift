@@ -3,13 +3,14 @@ import UIKit    //    DashboardViewController.swift
 
 class DashboardViewController : UIViewController {
     
-    lazy var dashboardTextView = DashboardTextView()
+    lazy var dashboardView = DashboardView()
+    
+    var refreshInterval = TimeInterval(1)
+    var refreshCount = 0
     
     override func viewDidLoad() {
         
         super.viewDidLoad()
-        
-        viewFrameWidth = view.frame.width;  viewFrameHeight = view.frame.height
         
         setupDashboardView()
         
@@ -26,14 +27,14 @@ class DashboardViewController : UIViewController {
     
     func setupDashboardView() {
         
-        dashboardTextView.frame = CGRect(x: 0, y: 0, width: viewFrameWidth, height: viewFrameHeight)
+        dashboardView.frame = CGRect(x: 0, y: 0, width: viewFrameWidth, height: viewFrameHeight)
         
-        view.addSubview(dashboardTextView)
+        view.addSubview(dashboardView)
         
         let tapLabel = UITapGestureRecognizer(target: self, action: #selector(tappedLabel))
         
-        dashboardTextView.priceLabel.addGestureRecognizer(tapLabel)
-        dashboardTextView.priceLabel.isUserInteractionEnabled = true
+        dashboardView.priceLabel.addGestureRecognizer(tapLabel)
+        dashboardView.priceLabel.isUserInteractionEnabled = true
     }
     
 }

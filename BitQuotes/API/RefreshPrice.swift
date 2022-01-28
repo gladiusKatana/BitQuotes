@@ -5,15 +5,18 @@ extension DashboardViewController {
     
     func periodicDateRefresh(completion: () -> ()) {       //print("·", terminator: "")
         
+        var removedTempField = false
+        
         DispatchQueue.main.asyncAfter(deadline: .now()) {  [weak self] in
             
             let apiServ = ApiService()
             apiServ.getLatestPrice()
             
-            self?.dashboardTextView.priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
+            self?.dashboardView.priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
             
-            if currentBitcoinPriceString != defaultInitialString && !removedTempField {
-                dashboardVC.dashboardTextView.tempPriceLabel.removeFromSuperview()
+            if currentBitcoinPriceString != defaultInitialString
+                && !removedTempField {
+                self?.dashboardView.tempPriceLabel.removeFromSuperview()
                 removedTempField = true
             }
         }

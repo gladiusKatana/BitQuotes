@@ -1,7 +1,7 @@
 import UIKit    //    DashboardTextView.swift
 
 
-class DashboardTextView : UIView {
+class DashboardView : UIView {
     
     var priceLabel = UILabel()
     var quoteLabel = UILabel()

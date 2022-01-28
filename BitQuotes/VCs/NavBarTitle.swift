@@ -1,7 +1,7 @@
 import UIKit    //    NavBarTitle.swift
 
 
-extension UIViewController {
+extension DashboardViewController {
     
     func setNavBarTitle(_ customString: String?, color: UIColor) {    //print("setting nav bar title")
         

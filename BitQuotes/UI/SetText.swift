@@ -34,14 +34,16 @@ extension UILabel {
     }
     
     
-    func setMixedFontAssetDescription(cellNumber: Int, color: UIColor) {
-        self.textColor = color
-        
-        let attrText = customizeFont(string: "\(assetPairStrings[cellNumber])", font: font21)
-        
-        attrText.append(customizeFont(string: "  -  \(assetDescriptionStrings[cellNumber])", font: font14))
-        
-        self.attributedText = attrText
-    }
+//    func setMixedFontAssetDescription(cellNumber: Int, color: UIColor) {
+//        self.textColor = color
+//
+//        let assetPairStrings = ["BTCUSD", "SATUSD", "USDSAT"]
+//        //var assetDescriptionStrings = ["Bitcoin in US Dollars", "Satoshis in US Dollars", "US Dollars per Satoshi", "Altcoin 1 vs Bitcoin", "Altcoin 2 vs Bitcoin", "Altcoin 3 vs Bitcoin", "Altcoin 4 vs Bitcoin"]
+//        let attrText = customizeFont(string: "\(assetPairStrings[cellNumber])", font: font21)
+//
+//        attrText.append(customizeFont(string: "  -  \(assetDescriptionStrings[cellNumber])", font: font14))
+//
+//        self.attributedText = attrText
+//    }
 }
 

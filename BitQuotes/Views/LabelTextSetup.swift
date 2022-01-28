@@ -1,7 +1,7 @@
 import UIKit    //    LabelTextSetup.swift
 
 
-extension DashboardTextView {
+extension DashboardView {
     
     func labelTextSetup() {
         
@@ -11,7 +11,7 @@ extension DashboardTextView {
         priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
         testPriceLabel.setMixedFontBalanceAmount(color: .clear, amountString: "99,999.99")
         
-        quoteIndex = randomNumber(inRange: 1...quotesWithAttributions.count) - 1        //; print("quoteIndex = \(quoteIndex)")
+        let quoteIndex = randomNumber(inRange: 1...quotesWithAttributions.count) - 1        //; print("quoteIndex = \(quoteIndex)")
         let testString = "\(quotesWithAttributions[quoteIndex][0])  —\(quotesWithAttributions[quoteIndex][1])"
         
         quoteLabel.configure(withText: testString, font: navBarAndQuoteFont, color: UIColor.black, alignment: .center)
@@ -28,6 +28,16 @@ extension DashboardTextView {
         
         self.tempPriceLabel.frame = CGRect(x: hodlX, y: hodlY, width: hodlWidth, height: hodlHeight) /// ; self?.tempPriceLabel.backgroundColor = .red
         self.addSubview(self.tempPriceLabel)
+    }
+    
+    
+    public func randomNumber<T : SignedInteger>(inRange range: ClosedRange<T> = 1...6) -> T {
+        
+        let length = Int64(range.upperBound - range.lowerBound + 1)
+        
+        let value = Int64(arc4random()) % length + Int64(range.lowerBound)
+        
+        return T(value)
     }
 }
 
