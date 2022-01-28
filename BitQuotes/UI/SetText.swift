@@ -47,3 +47,8 @@ extension UILabel {
 //    }
 }
 
+func customizeFont(string: String, font: UIFont) -> NSMutableAttributedString {
+    
+    return NSMutableAttributedString(string: string,
+                                     attributes:[NSAttributedString.Key.font : font ])
+}

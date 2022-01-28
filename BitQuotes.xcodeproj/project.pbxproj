@@ -216,7 +216,6 @@
 				062F3CAB263A66E600B024C1 /* Globals.swift */,
 				062F3C61263A64DD00B024C1 /* AppDelegate.swift */,
 				062F3CAA263A66E600B024C1 /* Launching.swift */,
-				062F3CA7263A66E500B024C1 /* LockOrientation.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -249,6 +248,7 @@
 				062F3C9C263A66E500B024C1 /* DashboardView.swift */,
 				06FC62D727A3FE0500F3FDAA /* LabelTextSetup.swift */,
 				062F3CA8263A66E600B024C1 /* Constraints.swift */,
+				062F3CA7263A66E500B024C1 /* LockOrientation.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
