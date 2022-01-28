@@ -1,5 +1,7 @@
 import UIKit    //    Globals.swift
 
+// (may be a temp. file ... if 'deglobalize' all below vars)
+
 var navController : UINavigationController? = UINavigationController()
 
 var backgroundVC = UIViewController()
@@ -37,3 +39,6 @@ var currentBitcoinPriceString = defaultInitialString
 
 var removedTempField = false
 
+var testColorsOn = true
+var testOrangeColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.6)
+var testGreenColor = UIColor(red: 0, green: 255, blue: 0, alpha: 0.6)

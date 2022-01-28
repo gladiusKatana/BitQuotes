@@ -37,7 +37,7 @@ class DashboardTextView : UIView {
             let quoteY = viewFrameHeight - quoteHeight - ( statusBarHeight + (navBarHeight - navBarTitleHeight) / 2 )
             
             self?.quoteLabel.frame = CGRect(x: 0, y: quoteY, width: viewFrameWidth, height: quoteHeight)
-            self?.quoteLabel.backgroundColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.6)
+            if testColorsOn { self?.quoteLabel.backgroundColor = testOrangeColor }
         }
     }
     
