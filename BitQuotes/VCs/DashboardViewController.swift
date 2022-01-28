@@ -31,7 +31,7 @@ class DashboardViewController : UIViewController {
         view.addSubview(dashboardView)
         
 //        let tapLabel = UITapGestureRecognizer(target: self, action: #selector(tappedLabel))
-//        
+//
 //        dashboardView.priceLabel.addGestureRecognizer(tapLabel)
 //        dashboardView.priceLabel.isUserInteractionEnabled = true
     }
