@@ -1,7 +1,7 @@
 import UIKit    //    RefreshPrice.swift
 
+
 extension DashboardViewController {
-    
     
     func periodicDateRefresh(completion: () -> ()) {       //print("·", terminator: "")
         

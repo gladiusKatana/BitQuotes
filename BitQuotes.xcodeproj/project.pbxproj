@@ -213,13 +213,13 @@
 		062F3CA9263A66E600B024C1 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				06FC62D927A4007100F3FDAA /* Notes.swift */,
 				063D5EA226433ED800E3AB9A /* Quotes.swift */,
 				062F3CAB263A66E600B024C1 /* Globals.swift */,
 				062F3C61263A64DD00B024C1 /* AppDelegate.swift */,
 				062F3CAA263A66E600B024C1 /* Launching.swift */,
 				063D5E9A2642667F00E3AB9A /* RandomNumber.swift */,
 				062F3CA7263A66E500B024C1 /* LockOrientation.swift */,
-				06FC62D927A4007100F3FDAA /* Notes.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";

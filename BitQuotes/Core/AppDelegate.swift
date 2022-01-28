@@ -1,8 +1,10 @@
 import UIKit    //    AppDelegate.swift
 
+
 @UIApplicationMain class AppDelegate: UIResponder, UIApplicationDelegate {
     
     var window: UIWindow?
+    
     lazy var orientationLock = UIInterfaceOrientationMask.all               /// set orientations you want allowed by default
     
     var statusBarUIView: UIView? {
@@ -23,6 +25,7 @@ import UIKit    //    AppDelegate.swift
         }
         else {return nil}
     }
+    
     
     func getBarHeights() {
         

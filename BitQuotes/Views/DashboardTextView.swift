@@ -1,5 +1,6 @@
 import UIKit    //    DashboardTextView.swift
 
+
 class DashboardTextView : UIView {
     
     var priceLabel = UILabel()
@@ -25,7 +26,6 @@ class DashboardTextView : UIView {
         let intHalfHeight = Int(viewFrameHeight / 2)
         
         addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]", views: testPriceLabel, testQuoteLabel)
-        
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             

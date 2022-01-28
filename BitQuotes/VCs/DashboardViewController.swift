@@ -1,5 +1,6 @@
 import UIKit    //    DashboardViewController.swift
 
+
 class DashboardViewController : UIViewController {
     
     lazy var dashboardTextView = DashboardTextView()
@@ -9,6 +10,7 @@ class DashboardViewController : UIViewController {
         super.viewDidLoad()
         
         viewFrameWidth = view.frame.width;  viewFrameHeight = view.frame.height
+        
         setupDashboardView()
         
         setNavBarTitle("BitQuotes: all the prices that matter, plus a quote™", color: UIColor.black)
@@ -28,9 +30,10 @@ class DashboardViewController : UIViewController {
         
         view.addSubview(dashboardTextView)
         
-        let tapMenu = UITapGestureRecognizer(target: self, action: #selector(tappedMenu))
+        let tapLabel = UITapGestureRecognizer(target: self, action: #selector(tappedLabel))
+        
+        dashboardTextView.priceLabel.addGestureRecognizer(tapLabel)
         dashboardTextView.priceLabel.isUserInteractionEnabled = true
-        dashboardTextView.priceLabel.addGestureRecognizer(tapMenu)
     }
     
 }

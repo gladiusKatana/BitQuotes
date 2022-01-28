@@ -1,10 +1,10 @@
 import UIKit    //    Navigation.swift
 
+
 extension UIViewController {
     
-    
-    @objc func tappedMenu() {
-        print("tapped menu")
+    @objc func tappedLabel() {
+        print("tapped label")
 //        dashboardVC.gotoView(vc: menuVC)
     }
     

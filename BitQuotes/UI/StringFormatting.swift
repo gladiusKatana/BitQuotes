@@ -1,7 +1,7 @@
 import UIKit    //    StringFormatting.swift
 
+
 extension String {
-    
     
     func removeCharacters(beforeOrAfter character: String, after: Bool) -> String {
         let string = self

@@ -1,7 +1,7 @@
 import UIKit    //    SetText.swift
 
+
 extension UILabel {
-    
     
     func configure(withText text: String, font: UIFont, color: UIColor, alignment: NSTextAlignment) {
         self.text = text
