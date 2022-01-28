@@ -8,7 +8,7 @@ var backgroundVC = UIViewController()
 
 var dashboardVC = DashboardViewController()
 
-var menuVC = MenuViewController()
+//var menuVC = MenuViewController()
 
 var statusBarHeight : CGFloat = CGFloat()
 

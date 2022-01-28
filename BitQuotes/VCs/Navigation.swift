@@ -5,7 +5,7 @@ extension UIViewController {
     
     @objc func tappedMenu() {
         print("tapped menu")
-        dashboardVC.gotoView(vc: menuVC)
+//        dashboardVC.gotoView(vc: menuVC)
     }
     
     func gotoView(vc: UIViewController) {   //print("\nshowing vc \(vc)")

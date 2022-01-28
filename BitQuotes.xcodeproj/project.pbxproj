@@ -18,7 +18,7 @@
 		062F3CAE263A66E600B024C1 /* StringFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9D263A66E500B024C1 /* StringFormatting.swift */; };
 		062F3CAF263A66E600B024C1 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9E263A66E500B024C1 /* Colors.swift */; };
 		062F3CB0263A66E600B024C1 /* SetText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3C9F263A66E500B024C1 /* SetText.swift */; };
-		062F3CB1263A66E600B024C1 /* NavBar(commented).swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA0263A66E500B024C1 /* NavBar(commented).swift */; };
+		062F3CB1263A66E600B024C1 /* NavBarButtons(commented).swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA0263A66E500B024C1 /* NavBarButtons(commented).swift */; };
 		062F3CB2263A66E600B024C1 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA2263A66E500B024C1 /* DashboardViewController.swift */; };
 		062F3CB3263A66E600B024C1 /* RefreshPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA4263A66E500B024C1 /* RefreshPrice.swift */; };
 		062F3CB4263A66E600B024C1 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 062F3CA5263A66E500B024C1 /* APIService.swift */; };
@@ -75,7 +75,7 @@
 		062F3C9D263A66E500B024C1 /* StringFormatting.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringFormatting.swift; sourceTree = "<group>"; };
 		062F3C9E263A66E500B024C1 /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		062F3C9F263A66E500B024C1 /* SetText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SetText.swift; sourceTree = "<group>"; };
-		062F3CA0263A66E500B024C1 /* NavBar(commented).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavBar(commented).swift"; sourceTree = "<group>"; };
+		062F3CA0263A66E500B024C1 /* NavBarButtons(commented).swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NavBarButtons(commented).swift"; sourceTree = "<group>"; };
 		062F3CA2263A66E500B024C1 /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		062F3CA4263A66E500B024C1 /* RefreshPrice.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RefreshPrice.swift; sourceTree = "<group>"; };
 		062F3CA5263A66E500B024C1 /* APIService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
@@ -191,10 +191,10 @@
 		062F3CA1263A66E500B024C1 /* VCs */ = {
 			isa = PBXGroup;
 			children = (
+				06BF2CA126549DC4008091EC /* Menu */,
 				066EA8642650D70A0060677F /* Navigation.swift */,
 				062F3C9A263A66E500B024C1 /* NavBarTitle.swift */,
 				067D4EE9265498C200432308 /* Dashboard */,
-				06BF2CA126549DC4008091EC /* Menu */,
 			);
 			path = VCs;
 			sourceTree = "<group>";
@@ -233,7 +233,7 @@
 		067D4EF026549A0E00432308 /* inactive */ = {
 			isa = PBXGroup;
 			children = (
-				062F3CA0263A66E500B024C1 /* NavBar(commented).swift */,
+				062F3CA0263A66E500B024C1 /* NavBarButtons(commented).swift */,
 			);
 			path = inactive;
 			sourceTree = "<group>";
@@ -409,7 +409,7 @@
 				067C6D19264E26E00055495E /* PriceDisplaySetup.swift in Sources */,
 				062F3CAC263A66E600B024C1 /* NavBarTitle.swift in Sources */,
 				062F3CB2263A66E600B024C1 /* DashboardViewController.swift in Sources */,
-				062F3CB1263A66E600B024C1 /* NavBar(commented).swift in Sources */,
+				062F3CB1263A66E600B024C1 /* NavBarButtons(commented).swift in Sources */,
 				066EA8722651EE900060677F /* BaseCell.swift in Sources */,
 				062F3CAF263A66E600B024C1 /* Colors.swift in Sources */,
 				062F3CB6263A66E600B024C1 /* LockOrientation.swift in Sources */,
