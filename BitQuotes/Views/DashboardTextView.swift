@@ -10,8 +10,11 @@ class DashboardTextView : UIView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
+        
         ApiService().getLatestPrice()
-        setupTextInFields()
+        
+        labelTextSetup()
+        
         addSubviews()
         
         addConstraintToTitleLabels([testPriceLabel, testQuoteLabel], attribute: .centerX, plusConstant: 0)
@@ -23,7 +26,9 @@ class DashboardTextView : UIView {
         
         addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]", views: testPriceLabel, testQuoteLabel)
         
+        
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
+            
             self?.priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
             
             let priceWidth = (self?.testPriceLabel.frame.width)!                        //; print("price label width: \(priceWidth)")
@@ -39,6 +44,13 @@ class DashboardTextView : UIView {
             self?.quoteLabel.frame = CGRect(x: 0, y: quoteY, width: viewFrameWidth, height: quoteHeight)
             if testColorsOn { self?.quoteLabel.backgroundColor = testOrangeColor }
         }
+    }
+    
+    func addSubviews() {
+        self.addSubview(priceLabel)
+        self.addSubview(quoteLabel)
+        self.addSubview(testPriceLabel)
+        self.addSubview(testQuoteLabel)
     }
     
     required init?(coder: NSCoder) {fatalError("init(coder:) has not been implemented")}

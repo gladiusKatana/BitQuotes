@@ -10,6 +10,9 @@ extension UIColor {
     
 }
 
+var testColorsOn = false
+var testOrangeColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.6)
+var testGreenColor = UIColor(red: 0, green: 255, blue: 0, alpha: 0.6)
 
 var customWhite = UIColor.rgb(248, g: 244, b: 252, a: 1)
 

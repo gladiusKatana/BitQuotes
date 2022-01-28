@@ -39,6 +39,4 @@ var currentBitcoinPriceString = defaultInitialString
 
 var removedTempField = false
 
-var testColorsOn = false
-var testOrangeColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.6)
-var testGreenColor = UIColor(red: 0, green: 255, blue: 0, alpha: 0.6)
+
