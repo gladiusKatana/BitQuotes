@@ -35,7 +35,9 @@ extension AppDelegate {
         
         window?.rootViewController = navController
         
-        dashboardVC.gotoView(vc: dashboardVC)
+//        DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+            dashboardVC.gotoView(vc: dashboardVC)
+//        }
         
         return true
     }
