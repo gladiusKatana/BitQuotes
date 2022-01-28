@@ -22,7 +22,7 @@ class ApiService: NSObject {
                 
                 let response = try JSONDecoder().decode(KrakenTickerResponse.self, from: data)
                 
-                let result = response.result                ; print("result: \(result)")
+                //let result = response.result                ; print("result: \(result)")
                 
                 let c = response.result.XXBTZUSD.c[0]       ///; print("The Price of Bitcoin is: \(c)")
                 

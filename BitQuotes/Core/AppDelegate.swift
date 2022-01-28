@@ -28,14 +28,14 @@ import UIKit    //    AppDelegate.swift
         
         guard let navbarheight = navController?.navigationBar.frame.height else {print("could not initialize nav bar to get height"); return}
         
-        navBarHeight = navbarheight         ; print("navBarHeight: \(navBarHeight)")
+        navBarHeight = navbarheight         //; print("navBarHeight: \(navBarHeight)")
         
         guard let statusbarheight = window?.windowScene?.statusBarManager?.statusBarFrame.height else {
             print("could not initialize nav bar to get height")
             return
         }
         
-        statusBarHeight = statusbarheight   ; print("statusBarHeight: \(statusBarHeight)")
+        statusBarHeight = statusbarheight   //; print("statusBarHeight: \(statusBarHeight)")
         
     }
     

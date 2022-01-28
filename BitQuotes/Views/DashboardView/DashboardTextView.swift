@@ -32,7 +32,7 @@ class DashboardTextView : UIView {
             let priceY = (self?.testPriceLabel.frame.minY)! - priceHeight / 2
             self?.priceLabel.frame = CGRect(x: priceX, y: priceY, width: priceWidth, height: priceHeight)
             
-            let quoteHeight = (self?.testQuoteLabel.frame.height)!                      ; print("quoteHeight: \(quoteHeight)")
+            let quoteHeight = (self?.testQuoteLabel.frame.height)!                      //; print("quoteHeight: \(quoteHeight)")
             
             let quoteY = viewFrameHeight - quoteHeight - ( statusBarHeight + (navBarHeight - navBarTitleHeight) / 2 )
             
