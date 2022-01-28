@@ -15,8 +15,10 @@ extension AppDelegate {
             //statusBarUIView!.backgroundColor = standardBackgroundColor
         //}
         
-        UINavigationBar.appearance().barTintColor = standardImageColor
-        UINavigationBar.appearance().shadowImage = UIImage()
+//        UINavigationBar.appearance().barTintColor = standardImageColor
+//        UINavigationBar.appearance().shadowImage = UIImage()
+        
+        UINavigationBar.appearance().backgroundColor = .green
         
         AppUtility.lockOrientation(.portrait)
         

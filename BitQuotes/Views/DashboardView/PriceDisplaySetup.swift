@@ -8,8 +8,6 @@ extension DashboardTextView {
         self.addSubview(quoteLabel)
         self.addSubview(testPriceLabel)
         self.addSubview(testQuoteLabel)
-        self.addSubview(testMenuLabel)
-        self.addSubview(testSourceLabel)
     }
     
     func setupTextInFields() {
@@ -23,8 +21,8 @@ extension DashboardTextView {
         quoteIndex = randomNumber(inRange: 1...quotesWithAttributions.count) - 1        //; print("quoteIndex = \(quoteIndex)")
         let testString = "\(quotesWithAttributions[quoteIndex][0])  —\(quotesWithAttributions[quoteIndex][1])"
         
-        quoteLabel.configure(withText: testString, font: font14, color: UIColor.black, alignment: .center)
-        testQuoteLabel.configure(withText: testString, font: font14, color: .clear, alignment: .center)
+        quoteLabel.configure(withText: testString, font: navBarAndQuoteFont, color: UIColor.black, alignment: .center)
+        testQuoteLabel.configure(withText: testString, font: navBarAndQuoteFont, color: .clear, alignment: .center)
     }
 }
 

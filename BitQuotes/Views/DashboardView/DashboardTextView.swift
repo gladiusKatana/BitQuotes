@@ -2,8 +2,11 @@ import UIKit    //    DashboardTextView.swift
 
 class DashboardTextView : UIView {
     
-    var priceLabel = UILabel();         var quoteLabel = UILabel();         var tempPriceLabel = UILabel()
-    var testPriceLabel = UILabel();     var testQuoteLabel = UILabel();     var testMenuLabel = UILabel();  var testSourceLabel = UILabel()
+    var priceLabel = UILabel()
+    var quoteLabel = UILabel()
+    var tempPriceLabel = UILabel()
+    var testPriceLabel = UILabel()
+    var testQuoteLabel = UILabel()
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -12,13 +15,13 @@ class DashboardTextView : UIView {
         addSubviews()
         
         addConstraintToTitleLabels([testPriceLabel, testQuoteLabel], attribute: .centerX, plusConstant: 0)
-        addConstraintToTitleLabels([testMenuLabel], attribute: .left, plusConstant: 0)
         
         addConstraint(NSLayoutConstraint(item: testQuoteLabel,
                                          attribute: .width, relatedBy: .equal, toItem: self, attribute: .width, multiplier: 1, constant: 0))
+        
         let intHalfHeight = Int(viewFrameHeight / 2)
-        let bottomMinus100 = Int(viewFrameHeight) - 200 - intHalfHeight
-        addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]-\(bottomMinus100)-[v2]", views: testPriceLabel, testQuoteLabel, testMenuLabel)
+        
+        addConstraintsWithFormat("V:|-\(intHalfHeight)-[v0]-0-[v1]", views: testPriceLabel, testQuoteLabel)
         
         DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) { [weak self] in
             self?.priceLabel.setMixedFontBalanceAmount(color: standardTextColor, amountString: currentBitcoinPriceString)
@@ -29,9 +32,12 @@ class DashboardTextView : UIView {
             let priceY = (self?.testPriceLabel.frame.minY)! - priceHeight / 2
             self?.priceLabel.frame = CGRect(x: priceX, y: priceY, width: priceWidth, height: priceHeight)
             
-            let quoteHeight = (self?.testQuoteLabel.frame.height)!                      //; print("quoteLabel height: \(quoteHeight)")
-            let quoteY = viewFrameHeight - quoteHeight - navBarHeight - statusBarHeight + navBarTitleHeight + 12
+            let quoteHeight = (self?.testQuoteLabel.frame.height)!                      ; print("quoteHeight: \(quoteHeight)")
+            
+            let quoteY = viewFrameHeight - quoteHeight - ( statusBarHeight + (navBarHeight - navBarTitleHeight) / 2 )
+            
             self?.quoteLabel.frame = CGRect(x: 0, y: quoteY, width: viewFrameWidth, height: quoteHeight)
+            self?.quoteLabel.backgroundColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.6)
         }
     }
     

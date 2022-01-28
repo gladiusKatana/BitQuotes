@@ -23,13 +23,13 @@ extension UIViewController {
         
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: viewFrameWidth, height: 14))
         
-        label.backgroundColor = .clear // .red //
+        label.backgroundColor = UIColor(red: 255, green: 0, blue: 0, alpha: 0.6) // .clear
         label.isUserInteractionEnabled = false
         
         label.text = titleText; label.numberOfLines = numLines
         label.textAlignment = alignment
         
-        label.font = font14
+        label.font = navBarAndQuoteFont
         label.textColor = color
         
         label.adjustsFontSizeToFitWidth = true

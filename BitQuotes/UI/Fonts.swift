@@ -2,6 +2,8 @@ import UIKit    //    Fonts.swift
 
 //let fontName = "Gill Sans" // "Hiragino Sans" //
 
+let navBarAndQuoteFont = font14
+
 let font38 = UIFont.systemFont(ofSize: 38, weight: .semibold)               // UIFont(name: fontName, size: 40)
 let font25 = UIFont.systemFont(ofSize: 25, weight: .semibold)               // UIFont(name: fontName, size: 28)
 let font21 = UIFont.systemFont(ofSize: 21, weight: .semibold)               // UIFont(name: fontName, size: 21)
