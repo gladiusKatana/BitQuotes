@@ -4,7 +4,7 @@
  
  review dynamic constraint logic
  
- test earlier pre-fetching price data
+ test earlier & faster pre-fetching price data
  
  
  

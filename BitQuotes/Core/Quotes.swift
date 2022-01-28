@@ -32,7 +32,7 @@ var quotesWithAttributions = [
     ["Bitcoin is designed to pump forever.",
      "Matt Odell"],
     
-    ["[...] imagine there was a base metal as scarce as gold but with the following properties: - boring grey in colour - not a good conductor of electricity - not particularly strong, but not ductile or easily malleable either - not useful for any practical or ornamental purpose and one special, magical property: - can be transported over a communications channel If it somehow acquired any value at all for whatever reason, [...]\n",
+    ["[...]imagine there was a base metal as scarce as gold but with the following properties: - boring grey in colour - not a good conductor of electricity - not particularly strong, but not ductile or easily malleable either - not useful for any practical or ornamental purpose and one special, magical property: - can be transported over a communications channel If it somehow acquired any value at all for whatever reason[...]\n",
      "Satoshi Nakamoto"],
     
     ["I am not a Bitcoin maximalist, I am a shitcoin minimalist.",
